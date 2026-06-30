@@ -1,0 +1,376 @@
+/* ============================================
+   智能旅游助手 - 全局样式
+   设计主题：Aurora UI + Motion-Driven 旅行风
+   主色：#0EA5E9（天空蓝）+ #EA580C（冒险橙）
+   ============================================ */
+
+:root {
+  /* 主色调 — 天空蓝系 */
+  --primary: #0EA5E9;
+  --primary-light: #38BDF8;
+  --primary-dark: #0284C7;
+  /* 强调色 — 冒险橙 */
+  --accent: #EA580C;
+  --accent-light: #F97316;
+  /* 背景与表面 */
+  --bg: #F0F9FF;
+  --card-bg: #ffffff;
+  /* 文字层级 */
+  --text-primary: #0C4A6E;
+  --text-secondary: #475569;
+  --text-muted: #94A3B8;
+  /* 语义色 */
+  --success: #07c160;
+  --warning: #f59e0b;
+  --danger: #ee0a24;
+  /* 骨架屏 */
+  --skeleton-base: #e2e8f0;
+  --skeleton-shine: #f1f5f9;
+  /* 阴影层级 */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.03);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.06), 0 2px 4px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.08), 0 3px 8px rgba(0, 0, 0, 0.05);
+  /* 圆角 */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-full: 9999px;
+  /* 渐变预设 */
+  --gradient-primary: linear-gradient(135deg, #0EA5E9 0%, #38BDF8 100%);
+  --gradient-accent: linear-gradient(135deg, #EA580C 0%, #F97316 100%);
+  --gradient-warm: linear-gradient(135deg, #ff6b6b 0%, #feca57 100%);
+  --gradient-purple: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --gradient-night: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+  /* 过渡 */
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-fast: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  /* 字体大小 */
+  --font-xs: 11px;
+  --font-sm: 13px;
+  --font-md: 15px;
+  --font-lg: 17px;
+  --font-xl: 20px;
+  --font-xxl: 24px;
+  /* 间距 */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+}
+
+/* 页面容器 */
+.page-container {
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: var(--bg);
+  padding-bottom: 70px;
+}
+
+/* 页面头部 */
+.page-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #fff;
+}
+
+.page-header :deep(.van-nav-bar) {
+  background: var(--gradient-primary);
+}
+
+.page-header :deep(.van-nav-bar__title) {
+  color: #fff;
+  font-weight: 600;
+  font-size: 17px;
+  letter-spacing: 0.5px;
+}
+
+.page-header :deep(.van-nav-bar__text) {
+  color: #fff;
+}
+
+.page-header :deep(.van-nav-bar .van-icon) {
+  color: #fff;
+}
+
+/* 页面内容区 */
+.page-content {
+  padding: 16px;
+}
+
+/* 通用按钮 */
+.common-button {
+  width: 100%;
+  height: 48px;
+  line-height: 48px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  transition: var(--transition);
+  letter-spacing: 0.5px;
+}
+
+.primary-button {
+  background: var(--gradient-primary) !important;
+  border: none !important;
+  color: #fff !important;
+  box-shadow: var(--shadow-md);
+}
+
+.primary-button:active {
+  transform: scale(0.97);
+  opacity: 0.9;
+}
+
+.secondary-button {
+  background-color: #fff !important;
+  color: var(--primary) !important;
+  border: 2px solid var(--primary) !important;
+}
+
+/* 卡片 */
+.card {
+  background-color: var(--card-bg);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+/* 区块标题 */
+.section-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.section-title::before {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 18px;
+  border-radius: 2px;
+  background: var(--gradient-primary);
+}
+
+/* 流式光标 */
+.streaming-cursor {
+  display: inline-block;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* 加载容器 */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+
+/* 渐变文字 */
+.gradient-text {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* 动画 - 淡入上移 */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* 动画 - 缩放进入 */
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.scale-in {
+  animation: scaleIn 0.3s ease-out;
+}
+
+/* ============================================
+   骨架屏
+   ============================================ */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--skeleton-base) 25%,
+    var(--skeleton-shine) 50%,
+    var(--skeleton-base) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: var(--radius-sm);
+}
+
+.skeleton-text {
+  height: 14px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+}
+
+.skeleton-text:last-child {
+  width: 60%;
+}
+
+.skeleton-title {
+  height: 20px;
+  width: 45%;
+  margin-bottom: 12px;
+  border-radius: 4px;
+}
+
+/* ============================================
+   浮动动画
+   ============================================ */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+/* ============================================
+   水平滚动容器
+   ============================================ */
+.scroll-x {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  gap: var(--space-sm);
+  padding-bottom: var(--space-sm);
+  touch-action: pan-x;
+}
+
+.scroll-x > * {
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}
+
+.scroll-x::-webkit-scrollbar {
+  display: none;
+}
+
+/* ============================================
+   点击缩放反馈
+   ============================================ */
+.press-scale {
+  transition: transform 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.press-scale:active {
+  transform: scale(0.97);
+}
+
+/* ============================================
+   空状态 / 错误状态
+   ============================================ */
+.empty-state,
+.error-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-xl) var(--space-md);
+  text-align: center;
+  min-height: 200px;
+}
+
+.empty-state-icon {
+  font-size: 48px;
+  margin-bottom: var(--space-md);
+  opacity: 0.5;
+}
+
+.empty-state-title {
+  font-size: var(--font-lg);
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 var(--space-sm);
+}
+
+.empty-state-desc {
+  font-size: var(--font-sm);
+  color: var(--text-muted);
+  margin: 0 0 var(--space-lg);
+}
+
+/* ============================================
+   页面过渡动画
+   ============================================ */
+.page-slide-enter-active,
+.page-slide-leave-active {
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.page-slide-enter-from {
+  opacity: 0;
+  transform: translateX(15px);
+}
+
+.page-slide-leave-to {
+  opacity: 0;
+  transform: translateX(-15px);
+}
+
+/* ============================================
+   减少动画
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

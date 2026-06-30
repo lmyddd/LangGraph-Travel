@@ -1,0 +1,67 @@
+//数据库蓝图
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+/// 用户表：存储注册用户的基本信息和认证凭据。
+/// 密码字段存储的是 bcrypt 哈希密文，永不存储明文。
+model User {
+  id        Int      @id @default(autoincrement()) /// 用户唯一ID（自增主键）
+  username  String   @unique                      /// 用户名（唯一索引，防止重名）
+  password  String                                 /// bcrypt 加密后的密码哈希（绝不为明文）
+  nickname  String?                                /// 昵称（可选，默认等于 username）
+  avatar    String?                                /// 头像 URL（可选）
+  createdAt DateTime @default(now())               /// 账号创建时间（默认当前时间戳）
+
+  /// 该用户创建的所有行程规划
+  trips         Trip[]
+  /// 该用户与 AI 的所有对话记录
+  chatMessages  ChatMessage[]
+}
+
+/// 行程表：用户每次提交的旅游规划请求，记录目的地、预算和天数。
+model Trip {
+  id        Int      @id @default(autoincrement()) /// 行程唯一ID（自增主键）
+  userId    Int                                    /// 关联的用户ID（外键 → User.id）
+  city      String                                 /// 目的地城市名称
+  budget    Float                                  /// 旅行预算（单位：元）
+  days      Int                                    /// 旅行天数
+  createdAt DateTime @default(now())               /// 创建时间
+
+  /// 所属用户
+  user     User      @relation(fields: [userId], references: [id])
+  /// 每一天的具体行程安排
+  tripDays TripDay[]
+}
+
+/// 行程天表：一次行程中每一天的详细安排（上午/下午/晚上三段式）。
+/// 景点信息用 JSONB 存储，因为 AI 输出的字段结构不固定。
+model TripDay {
+  id        Int    @id @default(autoincrement()) /// 天唯一ID（自增主键）
+  tripId    Int                                  /// 关联的行程ID（外键 → Trip.id，级联删除）
+  dayNumber Int                                  /// 第几天（从 1 开始）
+  morning   Json   @default("{}")                /// 上午行程（JSONB：spot/duration/ticket/description 等）
+  afternoon Json   @default("{}")                /// 下午行程（JSONB，同上结构）
+  evening   Json   @default("{}")                /// 晚间活动（JSONB，同上结构）
+
+  /// 所属行程（删除行程时自动删除所有天数记录）
+  trip Trip @relation(fields: [tripId], references: [id], onDelete: Cascade)
+}
+
+/// 对话记录表：存储用户与 AI 旅游助手的每一轮对话。
+/// 后续多轮对话时，按 userId + timestamp 排序取出历史上下文喂给 LLM。
+model ChatMessage {
+  id        Int      @id @default(autoincrement()) /// 消息唯一ID（自增主键）
+  userId    Int                                    /// 关联的用户ID（外键 → User.id）
+  role      String                                 /// 角色：user（用户）或 ai（AI助手）
+  content   String                                 /// 消息文本内容
+  timestamp DateTime @default(now())               /// 发送时间
+
+  /// 所属用户
+  user User @relation(fields: [userId], references: [id])
+}
