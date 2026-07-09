@@ -1,0 +1,870 @@
+{
+  "batches": [
+    {
+      "batchIndex": 0,
+      "batchName": "shared-types",
+      "files": [
+        {
+          "path": "shared/types.ts",
+          "language": "typescript",
+          "sizeLines": 169,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "./shared/types.ts": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 1,
+      "batchName": "root-docs-config",
+      "files": [
+        {
+          "path": ".gitignore",
+          "language": "text",
+          "sizeLines": 9,
+          "fileCategory": "config"
+        },
+        {
+          "path": "JD面试准备-针对性问答.md",
+          "language": "markdown",
+          "sizeLines": 393,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "nginx.conf",
+          "language": "nginx",
+          "sizeLines": 121,
+          "fileCategory": "code"
+        },
+        {
+          "path": "README.md",
+          "language": "markdown",
+          "sizeLines": 391,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "travel-h5/src/App.vue",
+          "language": "vue",
+          "sizeLines": 99,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-server/src/services/chatService.ts",
+          "language": "typescript",
+          "sizeLines": 44,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-server/src/services/travelService.ts",
+          "language": "typescript",
+          "sizeLines": 164,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-server/src/services/tripService.ts",
+          "language": "typescript",
+          "sizeLines": 111,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-server/src/services/userService.ts",
+          "language": "typescript",
+          "sizeLines": 85,
+          "fileCategory": "code"
+        },
+        {
+          "path": "面试学习指南.md",
+          "language": "markdown",
+          "sizeLines": 1165,
+          "fileCategory": "docs"
+        }
+      ],
+      "batchImportData": {
+        "./.gitignore": [],
+        "./JD面试准备-针对性问答.md": [],
+        "./nginx.conf": [],
+        "./README.md": [],
+        "./travel-h5/src/App.vue": [],
+        "./travel-server/src/services/chatService.ts": [],
+        "./travel-server/src/services/travelService.ts": [],
+        "./travel-server/src/services/tripService.ts": [],
+        "./travel-server/src/services/userService.ts": [],
+        "./面试学习指南.md": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 2,
+      "batchName": "h5-entry-config",
+      "files": [
+        {
+          "path": "travel-h5/.gitignore",
+          "language": "text",
+          "sizeLines": 29,
+          "fileCategory": "config"
+        },
+        {
+          "path": "travel-h5/components.d.ts",
+          "language": "typescript",
+          "sizeLines": 46,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-h5/index.html",
+          "language": "html",
+          "sizeLines": 20,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "travel-h5/package.json",
+          "language": "json",
+          "sizeLines": 35,
+          "fileCategory": "config"
+        },
+        {
+          "path": "travel-h5/README.md",
+          "language": "markdown",
+          "sizeLines": 6,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "travel-h5/src/env.d.ts",
+          "language": "typescript",
+          "sizeLines": 8,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-h5/src/main.ts",
+          "language": "typescript",
+          "sizeLines": 37,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-h5/tsconfig.json",
+          "language": "json",
+          "sizeLines": 28,
+          "fileCategory": "config"
+        },
+        {
+          "path": "travel-h5/vite.config.ts",
+          "language": "typescript",
+          "sizeLines": 82,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "./travel-h5/.gitignore": [],
+        "./travel-h5/components.d.ts": [],
+        "./travel-h5/index.html": [],
+        "./travel-h5/package.json": [],
+        "./travel-h5/README.md": [],
+        "./travel-h5/src/env.d.ts": [],
+        "./travel-h5/src/main.ts": [],
+        "./travel-h5/tsconfig.json": [],
+        "./travel-h5/vite.config.ts": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 3,
+      "batchName": "h5-views",
+      "files": [
+        {
+          "path": "travel-h5/src/views/chat/index.vue",
+          "language": "vue",
+          "sizeLines": 530,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-h5/src/views/detail/index.vue",
+          "language": "vue",
+          "sizeLines": 585,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-h5/src/views/history/index.vue",
+          "language": "vue",
+          "sizeLines": 354,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-h5/src/views/home/index.vue",
+          "language": "vue",
+          "sizeLines": 629,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-h5/src/views/login/index.vue",
+          "language": "vue",
+          "sizeLines": 683,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-h5/src/views/profile/index.vue",
+          "language": "vue",
+          "sizeLines": 423,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-h5/src/views/trip-detail/index.vue",
+          "language": "vue",
+          "sizeLines": 465,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "./travel-h5/src/views/chat/index.vue": [],
+        "./travel-h5/src/views/detail/index.vue": [],
+        "./travel-h5/src/views/history/index.vue": [],
+        "./travel-h5/src/views/home/index.vue": [],
+        "./travel-h5/src/views/login/index.vue": [],
+        "./travel-h5/src/views/profile/index.vue": [],
+        "./travel-h5/src/views/trip-detail/index.vue": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 4,
+      "batchName": "h5-components",
+      "files": [
+        {
+          "path": "travel-h5/src/components/AgentPipeline.vue",
+          "language": "vue",
+          "sizeLines": 318,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-h5/src/components/BudgetTable.vue",
+          "language": "vue",
+          "sizeLines": 153,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-h5/src/components/ChatBubble.vue",
+          "language": "vue",
+          "sizeLines": 544,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-h5/src/components/CityCard.vue",
+          "language": "vue",
+          "sizeLines": 95,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-h5/src/components/PageTransition.vue",
+          "language": "vue",
+          "sizeLines": 12,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-h5/src/components/SkeletonCard.vue",
+          "language": "vue",
+          "sizeLines": 48,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-h5/src/components/SpotItem.vue",
+          "language": "vue",
+          "sizeLines": 305,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-h5/src/components/StatCard.vue",
+          "language": "vue",
+          "sizeLines": 62,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "./travel-h5/src/components/AgentPipeline.vue": [],
+        "./travel-h5/src/components/BudgetTable.vue": [],
+        "./travel-h5/src/components/ChatBubble.vue": [],
+        "./travel-h5/src/components/CityCard.vue": [],
+        "./travel-h5/src/components/PageTransition.vue": [],
+        "./travel-h5/src/components/SkeletonCard.vue": [],
+        "./travel-h5/src/components/SpotItem.vue": [],
+        "./travel-h5/src/components/StatCard.vue": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 5,
+      "batchName": "h5-composables",
+      "files": [
+        {
+          "path": "travel-h5/src/composables/useAgentStream.ts",
+          "language": "typescript",
+          "sizeLines": 322,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-h5/src/composables/useClipboard.ts",
+          "language": "typescript",
+          "sizeLines": 35,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-h5/src/composables/useMarkdown.ts",
+          "language": "typescript",
+          "sizeLines": 345,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-h5/src/composables/usePasswordStrength.ts",
+          "language": "typescript",
+          "sizeLines": 44,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-h5/src/composables/useSuggestedQuestions.ts",
+          "language": "typescript",
+          "sizeLines": 69,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "./travel-h5/src/composables/useAgentStream.ts": [],
+        "./travel-h5/src/composables/useClipboard.ts": [],
+        "./travel-h5/src/composables/useMarkdown.ts": [],
+        "./travel-h5/src/composables/usePasswordStrength.ts": [],
+        "./travel-h5/src/composables/useSuggestedQuestions.ts": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 6,
+      "batchName": "h5-stores",
+      "files": [
+        {
+          "path": "travel-h5/src/store/favorites.ts",
+          "language": "typescript",
+          "sizeLines": 56,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-h5/src/store/user.ts",
+          "language": "typescript",
+          "sizeLines": 64,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "./travel-h5/src/store/favorites.ts": [],
+        "./travel-h5/src/store/user.ts": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 7,
+      "batchName": "h5-router",
+      "files": [
+        {
+          "path": "travel-h5/src/router/index.ts",
+          "language": "typescript",
+          "sizeLines": 83,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "./travel-h5/src/router/index.ts": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 8,
+      "batchName": "h5-utils",
+      "files": [
+        {
+          "path": "travel-h5/src/utils/cities.ts",
+          "language": "typescript",
+          "sizeLines": 153,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-h5/src/utils/request.ts",
+          "language": "typescript",
+          "sizeLines": 274,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "./travel-h5/src/utils/cities.ts": [],
+        "./travel-h5/src/utils/request.ts": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 9,
+      "batchName": "h5-style",
+      "files": [
+        {
+          "path": "travel-h5/src/style/common.css",
+          "language": "css",
+          "sizeLines": 377,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "./travel-h5/src/style/common.css": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 10,
+      "batchName": "server-entry-config",
+      "files": [
+        {
+          "path": "travel-server/.env",
+          "language": "dotenv",
+          "sizeLines": 26,
+          "fileCategory": "config"
+        },
+        {
+          "path": "travel-server/.env.example",
+          "language": "dotenv",
+          "sizeLines": 27,
+          "fileCategory": "config"
+        },
+        {
+          "path": "travel-server/.gitignore",
+          "language": "text",
+          "sizeLines": 22,
+          "fileCategory": "config"
+        },
+        {
+          "path": "travel-server/nodemon.json",
+          "language": "json",
+          "sizeLines": 9,
+          "fileCategory": "config"
+        },
+        {
+          "path": "travel-server/package.json",
+          "language": "json",
+          "sizeLines": 48,
+          "fileCategory": "config"
+        },
+        {
+          "path": "travel-server/prisma.config.ts",
+          "language": "typescript",
+          "sizeLines": 15,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-server/src/index.ts",
+          "language": "typescript",
+          "sizeLines": 55,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-server/tsconfig.json",
+          "language": "json",
+          "sizeLines": 23,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "./travel-server/.env": [],
+        "./travel-server/.env.example": [],
+        "./travel-server/.gitignore": [],
+        "./travel-server/nodemon.json": [],
+        "./travel-server/package.json": [],
+        "./travel-server/prisma.config.ts": [],
+        "./travel-server/src/index.ts": [],
+        "./travel-server/tsconfig.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 11,
+      "batchName": "server-routes",
+      "files": [
+        {
+          "path": "travel-server/src/routes/auth.ts",
+          "language": "typescript",
+          "sizeLines": 240,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-server/src/routes/travel.ts",
+          "language": "typescript",
+          "sizeLines": 226,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-server/src/routes/trip.ts",
+          "language": "typescript",
+          "sizeLines": 100,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "./travel-server/src/routes/auth.ts": [],
+        "./travel-server/src/routes/travel.ts": [],
+        "./travel-server/src/routes/trip.ts": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 12,
+      "batchName": "server-middleware",
+      "files": [
+        {
+          "path": "travel-server/src/middleware/auth.ts",
+          "language": "typescript",
+          "sizeLines": 75,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "./travel-server/src/middleware/auth.ts": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 13,
+      "batchName": "server-services",
+      "files": [
+        {
+          "path": "travel-server/src/services/db.ts",
+          "language": "typescript",
+          "sizeLines": 33,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "./travel-server/src/services/db.ts": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 14,
+      "batchName": "server-agent-graph",
+      "files": [
+        {
+          "path": "travel-server/src/services/agent/graph/builder.ts",
+          "language": "typescript",
+          "sizeLines": 106,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-server/src/services/agent/graph/index.ts",
+          "language": "typescript",
+          "sizeLines": 159,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-server/src/services/agent/graph/nodes/budgeter.ts",
+          "language": "typescript",
+          "sizeLines": 101,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-server/src/services/agent/graph/nodes/finalizer.ts",
+          "language": "typescript",
+          "sizeLines": 103,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-server/src/services/agent/graph/nodes/planner-llm.ts",
+          "language": "typescript",
+          "sizeLines": 447,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-server/src/services/agent/graph/nodes/planner-tools.ts",
+          "language": "typescript",
+          "sizeLines": 137,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-server/src/services/agent/graph/nodes/researcher.ts",
+          "language": "typescript",
+          "sizeLines": 85,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-server/src/services/agent/graph/nodes/reviewer.ts",
+          "language": "typescript",
+          "sizeLines": 381,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-server/src/services/agent/graph/nodes/weather.ts",
+          "language": "typescript",
+          "sizeLines": 112,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-server/src/services/agent/graph/routing.ts",
+          "language": "typescript",
+          "sizeLines": 76,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-server/src/services/agent/graph/state.ts",
+          "language": "typescript",
+          "sizeLines": 144,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-server/src/services/agent/graph/stream-adapter.ts",
+          "language": "typescript",
+          "sizeLines": 56,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-server/src/services/agent/graph/tools/find-restaurants.ts",
+          "language": "typescript",
+          "sizeLines": 60,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-server/src/services/agent/graph/tools/index.ts",
+          "language": "typescript",
+          "sizeLines": 25,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-server/src/services/agent/graph/tools/search-details.ts",
+          "language": "typescript",
+          "sizeLines": 43,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-server/src/services/agent/graph/tools/transport-info.ts",
+          "language": "typescript",
+          "sizeLines": 45,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "./travel-server/src/services/agent/graph/builder.ts": [],
+        "./travel-server/src/services/agent/graph/index.ts": [],
+        "./travel-server/src/services/agent/graph/nodes/budgeter.ts": [],
+        "./travel-server/src/services/agent/graph/nodes/finalizer.ts": [],
+        "./travel-server/src/services/agent/graph/nodes/planner-llm.ts": [],
+        "./travel-server/src/services/agent/graph/nodes/planner-tools.ts": [],
+        "./travel-server/src/services/agent/graph/nodes/researcher.ts": [],
+        "./travel-server/src/services/agent/graph/nodes/reviewer.ts": [],
+        "./travel-server/src/services/agent/graph/nodes/weather.ts": [],
+        "./travel-server/src/services/agent/graph/routing.ts": [],
+        "./travel-server/src/services/agent/graph/state.ts": [],
+        "./travel-server/src/services/agent/graph/stream-adapter.ts": [],
+        "./travel-server/src/services/agent/graph/tools/find-restaurants.ts": [],
+        "./travel-server/src/services/agent/graph/tools/index.ts": [],
+        "./travel-server/src/services/agent/graph/tools/search-details.ts": [],
+        "./travel-server/src/services/agent/graph/tools/transport-info.ts": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 15,
+      "batchName": "server-agent-tools",
+      "files": [
+        {
+          "path": "travel-server/src/services/agent/tools/calculator.ts",
+          "language": "typescript",
+          "sizeLines": 164,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-server/src/services/agent/tools/search.ts",
+          "language": "typescript",
+          "sizeLines": 114,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-server/src/services/agent/tools/weather.ts",
+          "language": "typescript",
+          "sizeLines": 145,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "./travel-server/src/services/agent/tools/calculator.ts": [],
+        "./travel-server/src/services/agent/tools/search.ts": [],
+        "./travel-server/src/services/agent/tools/weather.ts": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 16,
+      "batchName": "server-agent-misc",
+      "files": [
+        {
+          "path": "travel-server/src/services/agent/schemas.ts",
+          "language": "typescript",
+          "sizeLines": 105,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-server/src/services/agent/types.ts",
+          "language": "typescript",
+          "sizeLines": 47,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-server/src/services/agent/utils/llm.ts",
+          "language": "typescript",
+          "sizeLines": 92,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "./travel-server/src/services/agent/schemas.ts": [],
+        "./travel-server/src/services/agent/types.ts": [],
+        "./travel-server/src/services/agent/utils/llm.ts": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 17,
+      "batchName": "server-generated",
+      "files": [
+        {
+          "path": "travel-server/src/generated/browser.ts",
+          "language": "typescript",
+          "sizeLines": 40,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-server/src/generated/client.ts",
+          "language": "typescript",
+          "sizeLines": 64,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-server/src/generated/commonInputTypes.ts",
+          "language": "typescript",
+          "sizeLines": 395,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-server/src/generated/enums.ts",
+          "language": "typescript",
+          "sizeLines": 16,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-server/src/generated/internal/class.ts",
+          "language": "typescript",
+          "sizeLines": 235,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-server/src/generated/internal/prismaNamespace.ts",
+          "language": "typescript",
+          "sizeLines": 1084,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-server/src/generated/internal/prismaNamespaceBrowser.ts",
+          "language": "typescript",
+          "sizeLines": 162,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-server/src/generated/models/ChatMessage.ts",
+          "language": "typescript",
+          "sizeLines": 1391,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-server/src/generated/models/Trip.ts",
+          "language": "typescript",
+          "sizeLines": 1585,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-server/src/generated/models/TripDay.ts",
+          "language": "typescript",
+          "sizeLines": 1414,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-server/src/generated/models/User.ts",
+          "language": "typescript",
+          "sizeLines": 1535,
+          "fileCategory": "code"
+        },
+        {
+          "path": "travel-server/src/generated/models.ts",
+          "language": "typescript",
+          "sizeLines": 15,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "./travel-server/src/generated/browser.ts": [],
+        "./travel-server/src/generated/client.ts": [],
+        "./travel-server/src/generated/commonInputTypes.ts": [],
+        "./travel-server/src/generated/enums.ts": [],
+        "./travel-server/src/generated/internal/class.ts": [],
+        "./travel-server/src/generated/internal/prismaNamespace.ts": [],
+        "./travel-server/src/generated/internal/prismaNamespaceBrowser.ts": [],
+        "./travel-server/src/generated/models/ChatMessage.ts": [],
+        "./travel-server/src/generated/models/Trip.ts": [],
+        "./travel-server/src/generated/models/TripDay.ts": [],
+        "./travel-server/src/generated/models/User.ts": [],
+        "./travel-server/src/generated/models.ts": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 18,
+      "batchName": "server-prisma",
+      "files": [
+        {
+          "path": "travel-server/prisma/migrations/20260615075541_init/migration.sql",
+          "language": "sql",
+          "sizeLines": 59,
+          "fileCategory": "data"
+        },
+        {
+          "path": "travel-server/prisma/migrations/migration_lock.toml",
+          "language": "toml",
+          "sizeLines": 4,
+          "fileCategory": "config"
+        },
+        {
+          "path": "travel-server/prisma/schema.prisma",
+          "language": "prisma",
+          "sizeLines": 68,
+          "fileCategory": "schema"
+        },
+        {
+          "path": "travel-server/prisma/seed.ts",
+          "language": "typescript",
+          "sizeLines": 69,
+          "fileCategory": "script"
+        }
+      ],
+      "batchImportData": {
+        "./travel-server/prisma/migrations/20260615075541_init/migration.sql": [],
+        "./travel-server/prisma/migrations/migration_lock.toml": [],
+        "./travel-server/prisma/schema.prisma": [],
+        "./travel-server/prisma/seed.ts": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 19,
+      "batchName": "server-utils",
+      "files": [
+        {
+          "path": "travel-server/src/utils/streamUtils.ts",
+          "language": "typescript",
+          "sizeLines": 45,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "./travel-server/src/utils/streamUtils.ts": []
+      },
+      "neighborMap": {}
+    }
+  ]
+}

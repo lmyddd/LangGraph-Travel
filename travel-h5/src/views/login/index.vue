@@ -176,9 +176,6 @@
           <button class="social-btn alipay" @click="showTip('支付宝登录功能开发中')">
             <van-icon name="alipay" size="22" />
           </button>
-          <button class="social-btn apple" @click="showTip('Apple 登录功能开发中')">
-            <van-icon name="apple" size="22" />
-          </button>
         </div>
       </div>
     </div>
@@ -237,7 +234,7 @@ const regPwdVisible = ref<boolean>(false)
 const regConfirmVisible = ref<boolean>(false)
 
 // ------ Toast ------
-function showTip(msg: string, pos: 'top' | 'middle' | 'bottom' = 'top'): void {
+function showTip(msg: string, pos: 'top' | 'middle' | 'bottom' = 'middle'): void {
   showToast({ message: msg, position: pos })
 }
 

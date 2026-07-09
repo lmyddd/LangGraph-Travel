@@ -1,0 +1,2038 @@
+{
+  "version": "1.0.0",
+  "project": {
+    "name": "智游 (Travel-AI)",
+    "languages": [
+      "typescript",
+      "vue",
+      "javascript",
+      "css",
+      "html",
+      "json",
+      "markdown",
+      "sql",
+      "prisma",
+      "toml",
+      "nginx",
+      "dotenv"
+    ],
+    "frameworks": [
+      "Vue 3",
+      "Vite",
+      "Pinia",
+      "Vue Router",
+      "Vant 4",
+      "Express",
+      "LangGraph",
+      "LangChain",
+      "Prisma"
+    ],
+    "description": "基于 Vue 3 + TypeScript 的移动端 AI 旅行规划应用，采用 LangGraph 多 Agent 协作架构，通过 SSE 实时流式推送 Agent 工作进度，为你生成真实可信的个性化行程方案。",
+    "analyzedAt": "2026-07-08T16:22:31.316222+00:00",
+    "gitCommitHash": "b8774a9f544fc183569256983dba1f9c3a0bedf9"
+  },
+  "nodes": [
+    {
+      "id": "config:.gitignore",
+      "type": "config",
+      "name": ".gitignore",
+      "filePath": ".gitignore",
+      "summary": ".gitignore: text config",
+      "tags": [
+        "untagged"
+      ],
+      "language": "text",
+      "complexity": "simple"
+    },
+    {
+      "id": "document:JD面试准备-针对性问答.md",
+      "type": "document",
+      "name": "JD面试准备-针对性问答.md",
+      "filePath": "JD面试准备-针对性问答.md",
+      "summary": "JD面试准备-针对性问答: markdown docs",
+      "tags": [
+        "untagged"
+      ],
+      "language": "markdown",
+      "complexity": "complex"
+    },
+    {
+      "id": "service:nginx.conf",
+      "type": "service",
+      "name": "nginx.conf",
+      "filePath": "nginx.conf",
+      "summary": "nginx: nginx code",
+      "tags": [
+        "untagged"
+      ],
+      "language": "nginx",
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "README.md",
+      "summary": "README: markdown docs",
+      "tags": [
+        "untagged"
+      ],
+      "language": "markdown",
+      "complexity": "complex"
+    },
+    {
+      "id": "file:shared/types.ts",
+      "type": "file",
+      "name": "types.ts",
+      "filePath": "shared/types.ts",
+      "summary": "types: typescript code",
+      "tags": [
+        "shared",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:travel-h5/.gitignore",
+      "type": "config",
+      "name": ".gitignore",
+      "filePath": "travel-h5/.gitignore",
+      "summary": ".gitignore: text config",
+      "tags": [
+        "frontend"
+      ],
+      "language": "text",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:travel-h5/components.d.ts",
+      "type": "file",
+      "name": "components.d.ts",
+      "filePath": "travel-h5/components.d.ts",
+      "summary": "components.d: typescript code",
+      "tags": [
+        "frontend",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:travel-h5/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "travel-h5/index.html",
+      "summary": "index: html markup",
+      "tags": [
+        "frontend"
+      ],
+      "language": "html",
+      "complexity": "simple"
+    },
+    {
+      "id": "config:travel-h5/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "travel-h5/package.json",
+      "summary": "package: json config",
+      "tags": [
+        "frontend"
+      ],
+      "language": "json",
+      "complexity": "simple"
+    },
+    {
+      "id": "document:travel-h5/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "travel-h5/README.md",
+      "summary": "README: markdown docs",
+      "tags": [
+        "frontend"
+      ],
+      "language": "markdown",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:travel-h5/src/App.vue",
+      "type": "file",
+      "name": "App.vue",
+      "filePath": "travel-h5/src/App.vue",
+      "summary": "App: vue code",
+      "tags": [
+        "frontend",
+        "typescript"
+      ],
+      "language": "vue",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:travel-h5/src/components/AgentPipeline.vue",
+      "type": "file",
+      "name": "AgentPipeline.vue",
+      "filePath": "travel-h5/src/components/AgentPipeline.vue",
+      "summary": "Agent 步骤指示器组件：可视化多 Agent 工作进度",
+      "tags": [
+        "frontend",
+        "component",
+        "typescript"
+      ],
+      "language": "vue",
+      "complexity": "complex"
+    },
+    {
+      "id": "file:travel-h5/src/components/BudgetTable.vue",
+      "type": "file",
+      "name": "BudgetTable.vue",
+      "filePath": "travel-h5/src/components/BudgetTable.vue",
+      "summary": "预算分解柱状图组件",
+      "tags": [
+        "frontend",
+        "component",
+        "typescript"
+      ],
+      "language": "vue",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:travel-h5/src/components/ChatBubble.vue",
+      "type": "file",
+      "name": "ChatBubble.vue",
+      "filePath": "travel-h5/src/components/ChatBubble.vue",
+      "summary": "AI/用户消息气泡组件：Markdown 渲染 + 一键复制",
+      "tags": [
+        "frontend",
+        "component",
+        "typescript"
+      ],
+      "language": "vue",
+      "complexity": "complex"
+    },
+    {
+      "id": "file:travel-h5/src/components/CityCard.vue",
+      "type": "file",
+      "name": "CityCard.vue",
+      "filePath": "travel-h5/src/components/CityCard.vue",
+      "summary": "热门城市卡片组件",
+      "tags": [
+        "frontend",
+        "component",
+        "typescript"
+      ],
+      "language": "vue",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:travel-h5/src/components/PageTransition.vue",
+      "type": "file",
+      "name": "PageTransition.vue",
+      "filePath": "travel-h5/src/components/PageTransition.vue",
+      "summary": "页面滑动过渡动画组件",
+      "tags": [
+        "frontend",
+        "component",
+        "typescript"
+      ],
+      "language": "vue",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:travel-h5/src/components/SkeletonCard.vue",
+      "type": "file",
+      "name": "SkeletonCard.vue",
+      "filePath": "travel-h5/src/components/SkeletonCard.vue",
+      "summary": "骨架屏占位符组件",
+      "tags": [
+        "frontend",
+        "component",
+        "typescript"
+      ],
+      "language": "vue",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:travel-h5/src/components/SpotItem.vue",
+      "type": "file",
+      "name": "SpotItem.vue",
+      "filePath": "travel-h5/src/components/SpotItem.vue",
+      "summary": "景点详情卡片组件",
+      "tags": [
+        "frontend",
+        "component",
+        "typescript"
+      ],
+      "language": "vue",
+      "complexity": "complex"
+    },
+    {
+      "id": "file:travel-h5/src/components/StatCard.vue",
+      "type": "file",
+      "name": "StatCard.vue",
+      "filePath": "travel-h5/src/components/StatCard.vue",
+      "summary": "统计卡片组件",
+      "tags": [
+        "frontend",
+        "component",
+        "typescript"
+      ],
+      "language": "vue",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:travel-h5/src/composables/useAgentStream.ts",
+      "type": "file",
+      "name": "useAgentStream.ts",
+      "filePath": "travel-h5/src/composables/useAgentStream.ts",
+      "summary": "Agent SSE 流式管理（状态机）：连接、解析、降级 JSON",
+      "tags": [
+        "frontend",
+        "composable",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "complex"
+    },
+    {
+      "id": "file:travel-h5/src/composables/useClipboard.ts",
+      "type": "file",
+      "name": "useClipboard.ts",
+      "filePath": "travel-h5/src/composables/useClipboard.ts",
+      "summary": "剪贴板操作封装",
+      "tags": [
+        "frontend",
+        "composable",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:travel-h5/src/composables/useMarkdown.ts",
+      "type": "file",
+      "name": "useMarkdown.ts",
+      "filePath": "travel-h5/src/composables/useMarkdown.ts",
+      "summary": "轻量 Markdown → HTML 渲染器（自研替代 200KB+ 第三方库）",
+      "tags": [
+        "frontend",
+        "composable",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "complex"
+    },
+    {
+      "id": "file:travel-h5/src/composables/usePasswordStrength.ts",
+      "type": "file",
+      "name": "usePasswordStrength.ts",
+      "filePath": "travel-h5/src/composables/usePasswordStrength.ts",
+      "summary": "密码强度评估工具",
+      "tags": [
+        "frontend",
+        "composable",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:travel-h5/src/composables/useSuggestedQuestions.ts",
+      "type": "file",
+      "name": "useSuggestedQuestions.ts",
+      "filePath": "travel-h5/src/composables/useSuggestedQuestions.ts",
+      "summary": "智能追问建议生成器",
+      "tags": [
+        "frontend",
+        "composable",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:travel-h5/src/env.d.ts",
+      "type": "file",
+      "name": "env.d.ts",
+      "filePath": "travel-h5/src/env.d.ts",
+      "summary": "env.d: typescript code",
+      "tags": [
+        "frontend",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:travel-h5/src/main.ts",
+      "type": "file",
+      "name": "main.ts",
+      "filePath": "travel-h5/src/main.ts",
+      "summary": "main: typescript code",
+      "tags": [
+        "frontend",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:travel-h5/src/router/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "travel-h5/src/router/index.ts",
+      "summary": "Agent 图谱模块导出入口",
+      "tags": [
+        "frontend",
+        "router",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:travel-h5/src/store/favorites.ts",
+      "type": "file",
+      "name": "favorites.ts",
+      "filePath": "travel-h5/src/store/favorites.ts",
+      "summary": "favorites: typescript code",
+      "tags": [
+        "frontend",
+        "store",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:travel-h5/src/store/user.ts",
+      "type": "file",
+      "name": "user.ts",
+      "filePath": "travel-h5/src/store/user.ts",
+      "summary": "user: typescript code",
+      "tags": [
+        "frontend",
+        "store",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:travel-h5/src/style/common.css",
+      "type": "file",
+      "name": "common.css",
+      "filePath": "travel-h5/src/style/common.css",
+      "summary": "common: css code",
+      "tags": [
+        "frontend",
+        "styling"
+      ],
+      "language": "css",
+      "complexity": "complex"
+    },
+    {
+      "id": "file:travel-h5/src/utils/cities.ts",
+      "type": "file",
+      "name": "cities.ts",
+      "filePath": "travel-h5/src/utils/cities.ts",
+      "summary": "cities: typescript code",
+      "tags": [
+        "frontend",
+        "utility",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:travel-h5/src/utils/request.ts",
+      "type": "file",
+      "name": "request.ts",
+      "filePath": "travel-h5/src/utils/request.ts",
+      "summary": "request: typescript code",
+      "tags": [
+        "frontend",
+        "utility",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "complex"
+    },
+    {
+      "id": "file:travel-h5/src/views/chat/index.vue",
+      "type": "file",
+      "name": "index.vue",
+      "filePath": "travel-h5/src/views/chat/index.vue",
+      "summary": "AI 对话页：SSE 流式聊天 + 建议追问",
+      "tags": [
+        "frontend",
+        "page",
+        "typescript"
+      ],
+      "language": "vue",
+      "complexity": "complex"
+    },
+    {
+      "id": "file:travel-h5/src/views/detail/index.vue",
+      "type": "file",
+      "name": "index.vue",
+      "filePath": "travel-h5/src/views/detail/index.vue",
+      "summary": "行程生成页：AgentPipeline 可视化 + 行程展示",
+      "tags": [
+        "frontend",
+        "page",
+        "typescript"
+      ],
+      "language": "vue",
+      "complexity": "complex"
+    },
+    {
+      "id": "file:travel-h5/src/views/history/index.vue",
+      "type": "file",
+      "name": "index.vue",
+      "filePath": "travel-h5/src/views/history/index.vue",
+      "summary": "历史行程页：下拉刷新 + 分页搜索",
+      "tags": [
+        "frontend",
+        "page",
+        "typescript"
+      ],
+      "language": "vue",
+      "complexity": "complex"
+    },
+    {
+      "id": "file:travel-h5/src/views/home/index.vue",
+      "type": "file",
+      "name": "index.vue",
+      "filePath": "travel-h5/src/views/home/index.vue",
+      "summary": "首页：城市推荐卡片 + 搜索入口",
+      "tags": [
+        "frontend",
+        "page",
+        "typescript"
+      ],
+      "language": "vue",
+      "complexity": "complex"
+    },
+    {
+      "id": "file:travel-h5/src/views/login/index.vue",
+      "type": "file",
+      "name": "index.vue",
+      "filePath": "travel-h5/src/views/login/index.vue",
+      "summary": "登录注册页：密码强度指示 + 记住我",
+      "tags": [
+        "frontend",
+        "page",
+        "typescript"
+      ],
+      "language": "vue",
+      "complexity": "complex"
+    },
+    {
+      "id": "file:travel-h5/src/views/profile/index.vue",
+      "type": "file",
+      "name": "index.vue",
+      "filePath": "travel-h5/src/views/profile/index.vue",
+      "summary": "个人中心页：统计 + 设置",
+      "tags": [
+        "frontend",
+        "page",
+        "typescript"
+      ],
+      "language": "vue",
+      "complexity": "complex"
+    },
+    {
+      "id": "file:travel-h5/src/views/trip-detail/index.vue",
+      "type": "file",
+      "name": "index.vue",
+      "filePath": "travel-h5/src/views/trip-detail/index.vue",
+      "summary": "行程生成页：AgentPipeline 可视化 + 行程展示",
+      "tags": [
+        "frontend",
+        "page",
+        "typescript"
+      ],
+      "language": "vue",
+      "complexity": "complex"
+    },
+    {
+      "id": "config:travel-h5/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "travel-h5/tsconfig.json",
+      "summary": "tsconfig: json config",
+      "tags": [
+        "frontend"
+      ],
+      "language": "json",
+      "complexity": "simple"
+    },
+    {
+      "id": "config:travel-h5/vite.config.ts",
+      "type": "config",
+      "name": "vite.config.ts",
+      "filePath": "travel-h5/vite.config.ts",
+      "summary": "vite.config: typescript code",
+      "tags": [
+        "frontend",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:travel-server/.env",
+      "type": "config",
+      "name": ".env",
+      "filePath": "travel-server/.env",
+      "summary": ".env: dotenv config",
+      "tags": [
+        "backend"
+      ],
+      "language": "dotenv",
+      "complexity": "simple"
+    },
+    {
+      "id": "config:travel-server/.env.example",
+      "type": "config",
+      "name": ".env.example",
+      "filePath": "travel-server/.env.example",
+      "summary": ".env: dotenv config",
+      "tags": [
+        "backend"
+      ],
+      "language": "dotenv",
+      "complexity": "simple"
+    },
+    {
+      "id": "config:travel-server/.gitignore",
+      "type": "config",
+      "name": ".gitignore",
+      "filePath": "travel-server/.gitignore",
+      "summary": ".gitignore: text config",
+      "tags": [
+        "backend"
+      ],
+      "language": "text",
+      "complexity": "simple"
+    },
+    {
+      "id": "config:travel-server/nodemon.json",
+      "type": "config",
+      "name": "nodemon.json",
+      "filePath": "travel-server/nodemon.json",
+      "summary": "nodemon: json config",
+      "tags": [
+        "backend"
+      ],
+      "language": "json",
+      "complexity": "simple"
+    },
+    {
+      "id": "config:travel-server/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "travel-server/package.json",
+      "summary": "package: json config",
+      "tags": [
+        "backend"
+      ],
+      "language": "json",
+      "complexity": "simple"
+    },
+    {
+      "id": "table:travel-server/prisma/migrations/20260615075541_init/migration.sql",
+      "type": "table",
+      "name": "migration.sql",
+      "filePath": "travel-server/prisma/migrations/20260615075541_init/migration.sql",
+      "summary": "migration: sql data",
+      "tags": [
+        "backend",
+        "database"
+      ],
+      "language": "sql",
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:travel-server/prisma/migrations/migration_lock.toml",
+      "type": "config",
+      "name": "migration_lock.toml",
+      "filePath": "travel-server/prisma/migrations/migration_lock.toml",
+      "summary": "migration_lock: toml config",
+      "tags": [
+        "backend",
+        "database"
+      ],
+      "language": "toml",
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:travel-server/prisma/schema.prisma",
+      "type": "schema",
+      "name": "schema.prisma",
+      "filePath": "travel-server/prisma/schema.prisma",
+      "summary": "schema: prisma schema",
+      "tags": [
+        "backend",
+        "database"
+      ],
+      "language": "prisma",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:travel-server/prisma/seed.ts",
+      "type": "file",
+      "name": "seed.ts",
+      "filePath": "travel-server/prisma/seed.ts",
+      "summary": "seed: typescript script",
+      "tags": [
+        "backend",
+        "database",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:travel-server/prisma.config.ts",
+      "type": "config",
+      "name": "prisma.config.ts",
+      "filePath": "travel-server/prisma.config.ts",
+      "summary": "prisma.config: typescript code",
+      "tags": [
+        "backend",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:travel-server/src/generated/browser.ts",
+      "type": "file",
+      "name": "browser.ts",
+      "filePath": "travel-server/src/generated/browser.ts",
+      "summary": "Prisma 浏览器端客户端",
+      "tags": [
+        "backend",
+        "generated",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:travel-server/src/generated/client.ts",
+      "type": "file",
+      "name": "client.ts",
+      "filePath": "travel-server/src/generated/client.ts",
+      "summary": "Prisma 客户端导出",
+      "tags": [
+        "backend",
+        "generated",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:travel-server/src/generated/commonInputTypes.ts",
+      "type": "file",
+      "name": "commonInputTypes.ts",
+      "filePath": "travel-server/src/generated/commonInputTypes.ts",
+      "summary": "Prisma 通用输入类型",
+      "tags": [
+        "backend",
+        "generated",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "complex"
+    },
+    {
+      "id": "file:travel-server/src/generated/enums.ts",
+      "type": "file",
+      "name": "enums.ts",
+      "filePath": "travel-server/src/generated/enums.ts",
+      "summary": "Prisma 枚举类型",
+      "tags": [
+        "backend",
+        "generated",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:travel-server/src/generated/internal/class.ts",
+      "type": "file",
+      "name": "class.ts",
+      "filePath": "travel-server/src/generated/internal/class.ts",
+      "summary": "Prisma 内部类型定义",
+      "tags": [
+        "backend",
+        "generated",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "complex"
+    },
+    {
+      "id": "file:travel-server/src/generated/internal/prismaNamespace.ts",
+      "type": "file",
+      "name": "prismaNamespace.ts",
+      "filePath": "travel-server/src/generated/internal/prismaNamespace.ts",
+      "summary": "Prisma 内部类型定义",
+      "tags": [
+        "backend",
+        "generated",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "complex"
+    },
+    {
+      "id": "file:travel-server/src/generated/internal/prismaNamespaceBrowser.ts",
+      "type": "file",
+      "name": "prismaNamespaceBrowser.ts",
+      "filePath": "travel-server/src/generated/internal/prismaNamespaceBrowser.ts",
+      "summary": "Prisma 内部类型定义",
+      "tags": [
+        "backend",
+        "generated",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:travel-server/src/generated/models/ChatMessage.ts",
+      "type": "file",
+      "name": "ChatMessage.ts",
+      "filePath": "travel-server/src/generated/models/ChatMessage.ts",
+      "summary": "Prisma 生成的 ChatMessage 模型类型",
+      "tags": [
+        "backend",
+        "generated",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "complex"
+    },
+    {
+      "id": "file:travel-server/src/generated/models/Trip.ts",
+      "type": "file",
+      "name": "Trip.ts",
+      "filePath": "travel-server/src/generated/models/Trip.ts",
+      "summary": "Prisma 生成的 Trip 模型类型",
+      "tags": [
+        "backend",
+        "generated",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "complex"
+    },
+    {
+      "id": "file:travel-server/src/generated/models/TripDay.ts",
+      "type": "file",
+      "name": "TripDay.ts",
+      "filePath": "travel-server/src/generated/models/TripDay.ts",
+      "summary": "Prisma 生成的 TripDay 模型类型",
+      "tags": [
+        "backend",
+        "generated",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "complex"
+    },
+    {
+      "id": "file:travel-server/src/generated/models/User.ts",
+      "type": "file",
+      "name": "User.ts",
+      "filePath": "travel-server/src/generated/models/User.ts",
+      "summary": "Prisma 生成的 User 模型类型",
+      "tags": [
+        "backend",
+        "generated",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "complex"
+    },
+    {
+      "id": "file:travel-server/src/generated/models.ts",
+      "type": "file",
+      "name": "models.ts",
+      "filePath": "travel-server/src/generated/models.ts",
+      "summary": "Prisma 模型类型汇总",
+      "tags": [
+        "backend",
+        "generated",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:travel-server/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "travel-server/src/index.ts",
+      "summary": "Agent 图谱模块导出入口",
+      "tags": [
+        "backend",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:travel-server/src/middleware/auth.ts",
+      "type": "file",
+      "name": "auth.ts",
+      "filePath": "travel-server/src/middleware/auth.ts",
+      "summary": "auth: typescript code",
+      "tags": [
+        "backend",
+        "middleware",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:travel-server/src/routes/auth.ts",
+      "type": "file",
+      "name": "auth.ts",
+      "filePath": "travel-server/src/routes/auth.ts",
+      "summary": "auth: typescript code",
+      "tags": [
+        "backend",
+        "route",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "complex"
+    },
+    {
+      "id": "file:travel-server/src/routes/travel.ts",
+      "type": "file",
+      "name": "travel.ts",
+      "filePath": "travel-server/src/routes/travel.ts",
+      "summary": "travel: typescript code",
+      "tags": [
+        "backend",
+        "route",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "complex"
+    },
+    {
+      "id": "file:travel-server/src/routes/trip.ts",
+      "type": "file",
+      "name": "trip.ts",
+      "filePath": "travel-server/src/routes/trip.ts",
+      "summary": "trip: typescript code",
+      "tags": [
+        "backend",
+        "route",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:travel-server/src/services/agent/graph/builder.ts",
+      "type": "file",
+      "name": "builder.ts",
+      "filePath": "travel-server/src/services/agent/graph/builder.ts",
+      "summary": "LangGraph 状态图编排：7 个 Agent 节点 + 条件路由",
+      "tags": [
+        "backend",
+        "service",
+        "agent",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:travel-server/src/services/agent/graph/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "travel-server/src/services/agent/graph/index.ts",
+      "summary": "Agent 图谱模块导出入口",
+      "tags": [
+        "backend",
+        "service",
+        "agent",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:travel-server/src/services/agent/graph/nodes/budgeter.ts",
+      "type": "file",
+      "name": "budgeter.ts",
+      "filePath": "travel-server/src/services/agent/graph/nodes/budgeter.ts",
+      "summary": "预算员 Agent：数学计算预算分解",
+      "tags": [
+        "backend",
+        "service",
+        "agent",
+        "agent-node",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:travel-server/src/services/agent/graph/nodes/finalizer.ts",
+      "type": "file",
+      "name": "finalizer.ts",
+      "filePath": "travel-server/src/services/agent/graph/nodes/finalizer.ts",
+      "summary": "组装员 Agent：最终 TripPlan 组装 + SSE complete",
+      "tags": [
+        "backend",
+        "service",
+        "agent",
+        "agent-node",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:travel-server/src/services/agent/graph/nodes/planner-llm.ts",
+      "type": "file",
+      "name": "planner-llm.ts",
+      "filePath": "travel-server/src/services/agent/graph/nodes/planner-llm.ts",
+      "summary": "核心规划师 Agent：LLM + 3 工具（搜索/交通/美食）",
+      "tags": [
+        "backend",
+        "service",
+        "agent",
+        "agent-node",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "complex"
+    },
+    {
+      "id": "file:travel-server/src/services/agent/graph/nodes/planner-tools.ts",
+      "type": "file",
+      "name": "planner-tools.ts",
+      "filePath": "travel-server/src/services/agent/graph/nodes/planner-tools.ts",
+      "summary": "规划师工具：Tavily 搜索增强",
+      "tags": [
+        "backend",
+        "service",
+        "agent",
+        "agent-node",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:travel-server/src/services/agent/graph/nodes/researcher.ts",
+      "type": "file",
+      "name": "researcher.ts",
+      "filePath": "travel-server/src/services/agent/graph/nodes/researcher.ts",
+      "summary": "研究员 Agent：Tavily 搜索真实景点信息",
+      "tags": [
+        "backend",
+        "service",
+        "agent",
+        "agent-node",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:travel-server/src/services/agent/graph/nodes/reviewer.ts",
+      "type": "file",
+      "name": "reviewer.ts",
+      "filePath": "travel-server/src/services/agent/graph/nodes/reviewer.ts",
+      "summary": "审核员 Agent：4 维度评分（完整度/真实性/预算/天气）+ 自我反思",
+      "tags": [
+        "backend",
+        "service",
+        "agent",
+        "agent-node",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "complex"
+    },
+    {
+      "id": "file:travel-server/src/services/agent/graph/nodes/weather.ts",
+      "type": "file",
+      "name": "weather.ts",
+      "filePath": "travel-server/src/services/agent/graph/nodes/weather.ts",
+      "summary": "天气员 Agent：Open-Meteo 天气数据查询",
+      "tags": [
+        "backend",
+        "service",
+        "agent",
+        "agent-node",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:travel-server/src/services/agent/graph/routing.ts",
+      "type": "file",
+      "name": "routing.ts",
+      "filePath": "travel-server/src/services/agent/graph/routing.ts",
+      "summary": "Agent 路由逻辑：评分阈值判断 → 修正/继续",
+      "tags": [
+        "backend",
+        "service",
+        "agent",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:travel-server/src/services/agent/graph/state.ts",
+      "type": "file",
+      "name": "state.ts",
+      "filePath": "travel-server/src/services/agent/graph/state.ts",
+      "summary": "Agent 状态类型定义（Annotation）",
+      "tags": [
+        "backend",
+        "service",
+        "agent",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:travel-server/src/services/agent/graph/stream-adapter.ts",
+      "type": "file",
+      "name": "stream-adapter.ts",
+      "filePath": "travel-server/src/services/agent/graph/stream-adapter.ts",
+      "summary": "SSE 流适配器：LangGraph 事件 → SSE 格式",
+      "tags": [
+        "backend",
+        "service",
+        "agent",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:travel-server/src/services/agent/graph/tools/find-restaurants.ts",
+      "type": "file",
+      "name": "find-restaurants.ts",
+      "filePath": "travel-server/src/services/agent/graph/tools/find-restaurants.ts",
+      "summary": "附近餐厅搜索工具",
+      "tags": [
+        "backend",
+        "service",
+        "agent",
+        "tool",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:travel-server/src/services/agent/graph/tools/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "travel-server/src/services/agent/graph/tools/index.ts",
+      "summary": "Agent 图谱模块导出入口",
+      "tags": [
+        "backend",
+        "service",
+        "agent",
+        "tool",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:travel-server/src/services/agent/graph/tools/search-details.ts",
+      "type": "file",
+      "name": "search-details.ts",
+      "filePath": "travel-server/src/services/agent/graph/tools/search-details.ts",
+      "summary": "景点详情搜索工具",
+      "tags": [
+        "backend",
+        "service",
+        "agent",
+        "tool",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:travel-server/src/services/agent/graph/tools/transport-info.ts",
+      "type": "file",
+      "name": "transport-info.ts",
+      "filePath": "travel-server/src/services/agent/graph/tools/transport-info.ts",
+      "summary": "交通路线查询工具",
+      "tags": [
+        "backend",
+        "service",
+        "agent",
+        "tool",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:travel-server/src/services/agent/schemas.ts",
+      "type": "file",
+      "name": "schemas.ts",
+      "filePath": "travel-server/src/services/agent/schemas.ts",
+      "summary": "schemas: typescript code",
+      "tags": [
+        "backend",
+        "service",
+        "agent",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:travel-server/src/services/agent/tools/calculator.ts",
+      "type": "file",
+      "name": "calculator.ts",
+      "filePath": "travel-server/src/services/agent/tools/calculator.ts",
+      "summary": "预算计算工具定义",
+      "tags": [
+        "backend",
+        "service",
+        "agent",
+        "tool",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:travel-server/src/services/agent/tools/search.ts",
+      "type": "file",
+      "name": "search.ts",
+      "filePath": "travel-server/src/services/agent/tools/search.ts",
+      "summary": "Tavily 搜索工具定义",
+      "tags": [
+        "backend",
+        "service",
+        "agent",
+        "tool",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:travel-server/src/services/agent/tools/weather.ts",
+      "type": "file",
+      "name": "weather.ts",
+      "filePath": "travel-server/src/services/agent/tools/weather.ts",
+      "summary": "天气员 Agent：Open-Meteo 天气数据查询",
+      "tags": [
+        "backend",
+        "service",
+        "agent",
+        "tool",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:travel-server/src/services/agent/types.ts",
+      "type": "file",
+      "name": "types.ts",
+      "filePath": "travel-server/src/services/agent/types.ts",
+      "summary": "types: typescript code",
+      "tags": [
+        "backend",
+        "service",
+        "agent",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:travel-server/src/services/agent/utils/llm.ts",
+      "type": "file",
+      "name": "llm.ts",
+      "filePath": "travel-server/src/services/agent/utils/llm.ts",
+      "summary": "llm: typescript code",
+      "tags": [
+        "backend",
+        "utility",
+        "service",
+        "agent",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:travel-server/src/services/chatService.ts",
+      "type": "file",
+      "name": "chatService.ts",
+      "filePath": "travel-server/src/services/chatService.ts",
+      "summary": "chatService: typescript code",
+      "tags": [
+        "backend",
+        "service",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:travel-server/src/services/db.ts",
+      "type": "file",
+      "name": "db.ts",
+      "filePath": "travel-server/src/services/db.ts",
+      "summary": "db: typescript code",
+      "tags": [
+        "backend",
+        "service",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:travel-server/src/services/travelService.ts",
+      "type": "file",
+      "name": "travelService.ts",
+      "filePath": "travel-server/src/services/travelService.ts",
+      "summary": "travelService: typescript code",
+      "tags": [
+        "backend",
+        "service",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:travel-server/src/services/tripService.ts",
+      "type": "file",
+      "name": "tripService.ts",
+      "filePath": "travel-server/src/services/tripService.ts",
+      "summary": "tripService: typescript code",
+      "tags": [
+        "backend",
+        "service",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:travel-server/src/services/userService.ts",
+      "type": "file",
+      "name": "userService.ts",
+      "filePath": "travel-server/src/services/userService.ts",
+      "summary": "userService: typescript code",
+      "tags": [
+        "backend",
+        "service",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:travel-server/src/utils/streamUtils.ts",
+      "type": "file",
+      "name": "streamUtils.ts",
+      "filePath": "travel-server/src/utils/streamUtils.ts",
+      "summary": "streamUtils: typescript code",
+      "tags": [
+        "backend",
+        "utility",
+        "typescript"
+      ],
+      "language": "typescript",
+      "complexity": "simple"
+    },
+    {
+      "id": "config:travel-server/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "travel-server/tsconfig.json",
+      "summary": "tsconfig: json config",
+      "tags": [
+        "backend"
+      ],
+      "language": "json",
+      "complexity": "simple"
+    },
+    {
+      "id": "document:面试学习指南.md",
+      "type": "document",
+      "name": "面试学习指南.md",
+      "filePath": "面试学习指南.md",
+      "summary": "面试学习指南: markdown docs",
+      "tags": [
+        "untagged"
+      ],
+      "language": "markdown",
+      "complexity": "complex"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:travel-h5/components.d.ts",
+      "target": "file:travel-h5/src/components/AgentPipeline.vue",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:travel-h5/components.d.ts",
+      "target": "file:travel-h5/src/components/BudgetTable.vue",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:travel-h5/components.d.ts",
+      "target": "file:travel-h5/src/components/ChatBubble.vue",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:travel-h5/components.d.ts",
+      "target": "file:travel-h5/src/components/CityCard.vue",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:travel-h5/components.d.ts",
+      "target": "file:travel-h5/src/components/PageTransition.vue",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:travel-h5/components.d.ts",
+      "target": "file:travel-h5/src/components/SkeletonCard.vue",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:travel-h5/components.d.ts",
+      "target": "file:travel-h5/src/components/SpotItem.vue",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:travel-h5/components.d.ts",
+      "target": "file:travel-h5/src/components/StatCard.vue",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:travel-h5/src/App.vue",
+      "target": "file:travel-h5/src/components/PageTransition.vue",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:travel-h5/src/components/ChatBubble.vue",
+      "target": "file:travel-h5/src/composables/useMarkdown.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:travel-h5/src/components/ChatBubble.vue",
+      "target": "file:travel-h5/src/composables/useClipboard.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:travel-h5/src/composables/useAgentStream.ts",
+      "target": "file:travel-h5/src/utils/request.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:travel-h5/src/main.ts",
+      "target": "file:travel-h5/src/App.vue",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:travel-h5/src/main.ts",
+      "target": "file:travel-h5/src/router/index.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:travel-h5/src/main.ts",
+      "target": "file:travel-h5/src/style/common.css",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:travel-h5/src/router/index.ts",
+      "target": "file:travel-h5/src/store/user.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:travel-h5/src/router/index.ts",
+      "target": "file:travel-h5/src/views/home/index.vue",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:travel-h5/src/router/index.ts",
+      "target": "file:travel-h5/src/views/login/index.vue",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:travel-h5/src/router/index.ts",
+      "target": "file:travel-h5/src/views/chat/index.vue",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:travel-h5/src/router/index.ts",
+      "target": "file:travel-h5/src/views/profile/index.vue",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:travel-h5/src/router/index.ts",
+      "target": "file:travel-h5/src/views/detail/index.vue",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:travel-h5/src/router/index.ts",
+      "target": "file:travel-h5/src/views/history/index.vue",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:travel-h5/src/router/index.ts",
+      "target": "file:travel-h5/src/views/trip-detail/index.vue",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:travel-h5/src/utils/request.ts",
+      "target": "file:travel-h5/src/store/user.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:travel-h5/src/views/chat/index.vue",
+      "target": "file:travel-h5/src/utils/request.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:travel-h5/src/views/chat/index.vue",
+      "target": "file:travel-h5/src/composables/useSuggestedQuestions.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:travel-h5/src/views/chat/index.vue",
+      "target": "file:travel-h5/src/components/ChatBubble.vue",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:travel-h5/src/views/detail/index.vue",
+      "target": "file:travel-h5/src/composables/useAgentStream.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:travel-h5/src/views/detail/index.vue",
+      "target": "file:travel-h5/src/store/user.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:travel-h5/src/views/detail/index.vue",
+      "target": "file:travel-h5/src/components/BudgetTable.vue",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:travel-h5/src/views/detail/index.vue",
+      "target": "file:travel-h5/src/components/SpotItem.vue",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:travel-h5/src/views/detail/index.vue",
+      "target": "file:travel-h5/src/components/AgentPipeline.vue",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:travel-h5/src/views/history/index.vue",
+      "target": "file:travel-h5/src/utils/request.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:travel-h5/src/views/history/index.vue",
+      "target": "file:travel-h5/src/utils/cities.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:travel-h5/src/views/home/index.vue",
+      "target": "file:travel-h5/src/store/user.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:travel-h5/src/views/home/index.vue",
+      "target": "file:travel-h5/src/utils/cities.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:travel-h5/src/views/home/index.vue",
+      "target": "file:travel-h5/src/components/CityCard.vue",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:travel-h5/src/views/login/index.vue",
+      "target": "file:travel-h5/src/store/user.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:travel-h5/src/views/login/index.vue",
+      "target": "file:travel-h5/src/utils/request.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:travel-h5/src/views/login/index.vue",
+      "target": "file:travel-h5/src/composables/usePasswordStrength.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:travel-h5/src/views/profile/index.vue",
+      "target": "file:travel-h5/src/store/user.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:travel-h5/src/views/profile/index.vue",
+      "target": "file:travel-h5/src/utils/request.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:travel-h5/src/views/profile/index.vue",
+      "target": "file:travel-h5/src/components/StatCard.vue",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:travel-h5/src/views/profile/index.vue",
+      "target": "file:travel-h5/src/components/SkeletonCard.vue",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:travel-h5/src/views/trip-detail/index.vue",
+      "target": "file:travel-h5/src/utils/request.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:travel-h5/src/views/trip-detail/index.vue",
+      "target": "file:travel-h5/src/components/SpotItem.vue",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:travel-server/src/generated/browser.ts",
+      "target": "file:travel-server/src/generated/internal/prismaNamespaceBrowser.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:travel-server/src/generated/client.ts",
+      "target": "file:travel-server/src/generated/internal/prismaNamespace.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:travel-server/src/generated/internal/prismaNamespace.ts",
+      "target": "file:travel-server/src/generated/internal/class.ts",
+      "type": "imports",
+      "weight": 0.7
+    }
+  ],
+  "layers": [
+    {
+      "id": "layer:documentation",
+      "name": "文档层",
+      "description": "项目文档：README 项目说明、面试准备资料、学习指南",
+      "nodeIds": [
+        "document:README.md",
+        "document:JD面试准备-针对性问答.md",
+        "document:面试学习指南.md",
+        "document:travel-h5/README.md"
+      ]
+    },
+    {
+      "id": "layer:shared-types",
+      "name": "共享类型层",
+      "description": "前后端共享 TypeScript 类型定义，确保 API 契约一致",
+      "nodeIds": [
+        "file:shared/types.ts"
+      ]
+    },
+    {
+      "id": "layer:frontend-entry-config",
+      "name": "前端入口与配置",
+      "description": "Vue 应用入口、全局配置、构建工具链",
+      "nodeIds": [
+        "file:travel-h5/src/main.ts",
+        "file:travel-h5/src/App.vue",
+        "file:travel-h5/index.html",
+        "config:travel-h5/package.json",
+        "config:travel-h5/tsconfig.json",
+        "config:travel-h5/vite.config.ts",
+        "file:travel-h5/src/env.d.ts",
+        "file:travel-h5/components.d.ts",
+        "config:travel-h5/.gitignore"
+      ]
+    },
+    {
+      "id": "layer:frontend-routing",
+      "name": "前端路由层",
+      "description": "Vue Router 配置：7 条懒加载路由、路由守卫、JWT 拦截",
+      "nodeIds": [
+        "file:travel-h5/src/router/index.ts"
+      ]
+    },
+    {
+      "id": "layer:frontend-pages",
+      "name": "页面层",
+      "description": "7 个移动端页面：首页推荐、AI 对话、行程生成、历史、行程详情、登录注册、个人中心",
+      "nodeIds": [
+        "file:travel-h5/src/views/home/index.vue",
+        "file:travel-h5/src/views/chat/index.vue",
+        "file:travel-h5/src/views/detail/index.vue",
+        "file:travel-h5/src/views/history/index.vue",
+        "file:travel-h5/src/views/trip-detail/index.vue",
+        "file:travel-h5/src/views/login/index.vue",
+        "file:travel-h5/src/views/profile/index.vue"
+      ]
+    },
+    {
+      "id": "layer:frontend-components",
+      "name": "组件层",
+      "description": "可复用 UI 组件：聊天气泡、Agent 步骤指示器、城市卡片、景点卡片、预算图表、统计卡片、骨架屏、页面过渡",
+      "nodeIds": [
+        "file:travel-h5/src/components/ChatBubble.vue",
+        "file:travel-h5/src/components/AgentPipeline.vue",
+        "file:travel-h5/src/components/CityCard.vue",
+        "file:travel-h5/src/components/SpotItem.vue",
+        "file:travel-h5/src/components/BudgetTable.vue",
+        "file:travel-h5/src/components/StatCard.vue",
+        "file:travel-h5/src/components/SkeletonCard.vue",
+        "file:travel-h5/src/components/PageTransition.vue"
+      ]
+    },
+    {
+      "id": "layer:frontend-logic",
+      "name": "前端逻辑层",
+      "description": "Composable 函数 + Pinia 状态管理 + HTTP 客户端 + 工具函数",
+      "nodeIds": [
+        "file:travel-h5/src/composables/useAgentStream.ts",
+        "file:travel-h5/src/composables/useMarkdown.ts",
+        "file:travel-h5/src/composables/useSuggestedQuestions.ts",
+        "file:travel-h5/src/composables/useClipboard.ts",
+        "file:travel-h5/src/composables/usePasswordStrength.ts",
+        "file:travel-h5/src/store/user.ts",
+        "file:travel-h5/src/store/favorites.ts",
+        "file:travel-h5/src/utils/request.ts",
+        "file:travel-h5/src/utils/cities.ts"
+      ]
+    },
+    {
+      "id": "layer:frontend-style",
+      "name": "样式层",
+      "description": "全局 CSS 样式和设计变量",
+      "nodeIds": [
+        "file:travel-h5/src/style/common.css"
+      ]
+    },
+    {
+      "id": "layer:server-entry-config",
+      "name": "后端入口与配置",
+      "description": "Express 服务入口、环境变量、编译和运行配置",
+      "nodeIds": [
+        "file:travel-server/src/index.ts",
+        "config:travel-server/package.json",
+        "config:travel-server/tsconfig.json",
+        "config:travel-server/nodemon.json",
+        "config:travel-server/.env",
+        "config:travel-server/.env.example",
+        "config:travel-server/.gitignore",
+        "config:travel-server/prisma.config.ts"
+      ]
+    },
+    {
+      "id": "layer:api-routes",
+      "name": "API 路由层",
+      "description": "RESTful API 端点：认证、旅行规划、行程管理",
+      "nodeIds": [
+        "file:travel-server/src/routes/auth.ts",
+        "file:travel-server/src/routes/travel.ts",
+        "file:travel-server/src/routes/trip.ts"
+      ]
+    },
+    {
+      "id": "layer:middleware",
+      "name": "中间件层",
+      "description": "JWT 认证中间件：Token 验证、用户身份提取",
+      "nodeIds": [
+        "file:travel-server/src/middleware/auth.ts"
+      ]
+    },
+    {
+      "id": "layer:service-layer",
+      "name": "服务层",
+      "description": "业务逻辑服务：用户管理、行程编排、对话记录、行程 CRUD、Prisma 连接",
+      "nodeIds": [
+        "file:travel-server/src/services/userService.ts",
+        "file:travel-server/src/services/travelService.ts",
+        "file:travel-server/src/services/chatService.ts",
+        "file:travel-server/src/services/tripService.ts",
+        "file:travel-server/src/services/db.ts"
+      ]
+    },
+    {
+      "id": "layer:ai-agent",
+      "name": "AI Agent 编排层",
+      "description": "LangGraph 多 Agent 状态图 + 工具 + Schema + LLM 工厂",
+      "nodeIds": [
+        "file:travel-server/src/services/agent/graph/builder.ts",
+        "file:travel-server/src/services/agent/graph/index.ts",
+        "file:travel-server/src/services/agent/graph/state.ts",
+        "file:travel-server/src/services/agent/graph/routing.ts",
+        "file:travel-server/src/services/agent/graph/stream-adapter.ts",
+        "file:travel-server/src/services/agent/graph/nodes/researcher.ts",
+        "file:travel-server/src/services/agent/graph/nodes/weather.ts",
+        "file:travel-server/src/services/agent/graph/nodes/planner-llm.ts",
+        "file:travel-server/src/services/agent/graph/nodes/planner-tools.ts",
+        "file:travel-server/src/services/agent/graph/nodes/reviewer.ts",
+        "file:travel-server/src/services/agent/graph/nodes/budgeter.ts",
+        "file:travel-server/src/services/agent/graph/nodes/finalizer.ts",
+        "file:travel-server/src/services/agent/graph/tools/index.ts",
+        "file:travel-server/src/services/agent/graph/tools/search-details.ts",
+        "file:travel-server/src/services/agent/graph/tools/find-restaurants.ts",
+        "file:travel-server/src/services/agent/graph/tools/transport-info.ts",
+        "file:travel-server/src/services/agent/tools/search.ts",
+        "file:travel-server/src/services/agent/tools/weather.ts",
+        "file:travel-server/src/services/agent/tools/calculator.ts",
+        "file:travel-server/src/services/agent/schemas.ts",
+        "file:travel-server/src/services/agent/types.ts",
+        "file:travel-server/src/services/agent/utils/llm.ts"
+      ]
+    },
+    {
+      "id": "layer:data-layer",
+      "name": "数据层",
+      "description": "Prisma 数据库模型、迁移、种子数据、生成类型",
+      "nodeIds": [
+        "schema:travel-server/prisma/schema.prisma",
+        "file:travel-server/prisma/seed.ts",
+        "table:travel-server/prisma/migrations/20260615075541_init/migration.sql",
+        "config:travel-server/prisma/migrations/migration_lock.toml",
+        "file:travel-server/src/generated/client.ts",
+        "file:travel-server/src/generated/browser.ts",
+        "file:travel-server/src/generated/models.ts",
+        "file:travel-server/src/generated/enums.ts",
+        "file:travel-server/src/generated/commonInputTypes.ts",
+        "file:travel-server/src/generated/models/User.ts",
+        "file:travel-server/src/generated/models/Trip.ts",
+        "file:travel-server/src/generated/models/TripDay.ts",
+        "file:travel-server/src/generated/models/ChatMessage.ts",
+        "file:travel-server/src/generated/internal/class.ts",
+        "file:travel-server/src/generated/internal/prismaNamespace.ts",
+        "file:travel-server/src/generated/internal/prismaNamespaceBrowser.ts"
+      ]
+    },
+    {
+      "id": "layer:utility",
+      "name": "工具层",
+      "description": "通用工具函数：SSE 流处理",
+      "nodeIds": [
+        "file:travel-server/src/utils/streamUtils.ts"
+      ]
+    },
+    {
+      "id": "layer:infrastructure",
+      "name": "基础设施层",
+      "description": "Nginx 反向代理配置 + 部署基础设施",
+      "nodeIds": [
+        "service:nginx.conf"
+      ]
+    },
+    {
+      "id": "layer:root-config",
+      "name": "根配置",
+      "description": "项目根级别的配置文件和 Git 忽略规则",
+      "nodeIds": [
+        "config:.gitignore"
+      ]
+    }
+  ],
+  "tour": [
+    {
+      "order": 1,
+      "title": "项目概览",
+      "description": "阅读 README 了解项目全貌：智游（Travel-AI）是一个基于 Vue 3 + TypeScript 的移动端 AI 旅行规划应用，采用 LangGraph 多 Agent 协作架构，通过 SSE 流式推送 Agent 工作进度。核心亮点包括：多 Agent 协作编排、SSE 实时可视化、JWT 认证、生产级工程化。",
+      "nodeIds": [
+        "document:README.md"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "共享类型定义",
+      "description": "前后端 API 契约的核心——shared/types.ts 定义了 User、TripPlan、DailyItinerary、AgentEvent 等 15 个共享类型，确保前后端数据结构一致。这是了解系统数据模型的起点。",
+      "nodeIds": [
+        "file:shared/types.ts"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "前端应用入口",
+      "description": "main.ts 创建 Vue 应用实例，注册 Pinia 状态管理、Vue Router 路由、Vant 组件库，然后挂载到 #app。App.vue 是根组件，包含底部 TabBar 导航和页面过渡动画 PageTransition。",
+      "nodeIds": [
+        "file:travel-h5/src/main.ts",
+        "file:travel-h5/src/App.vue",
+        "file:travel-h5/index.html"
+      ],
+      "languageLesson": "Vue 3 应用通过 createApp() 创建实例，使用 app.use() 注册插件（Router、Pinia）。main.ts 是整个前端的入口文件，App.vue 是根组件。"
+    },
+    {
+      "order": 4,
+      "title": "前端路由系统",
+      "description": "router/index.ts 定义了 7 条懒加载路由（首页、AI 对话、行程生成、历史记录、行程详情、登录注册、个人中心）。路由守卫在每次导航前检查 Pinia store 中的认证状态，自动拦截未登录用户。",
+      "nodeIds": [
+        "file:travel-h5/src/router/index.ts",
+        "file:travel-h5/src/store/user.ts"
+      ],
+      "languageLesson": "Vue Router 的路由懒加载使用 () => import() 语法实现代码分割。全局前置守卫 beforeEach 检查 JWT Token 有效性，实现前端路由级权限控制。"
+    },
+    {
+      "order": 5,
+      "title": "AI 对话核心流程",
+      "description": "chat/index.vue 是用户与 AI 交互的主战场。useAgentStream.ts（SSE 状态机）管理连接生命周期和流式解析，ChatBubble.vue 使用自研的 useMarkdown.ts 渲染 Markdown 回复，useSuggestedQuestions.ts 智能生成追问建议。SSE 失败时自动降级为 JSON 模式。",
+      "nodeIds": [
+        "file:travel-h5/src/views/chat/index.vue",
+        "file:travel-h5/src/composables/useAgentStream.ts",
+        "file:travel-h5/src/composables/useMarkdown.ts",
+        "file:travel-h5/src/composables/useSuggestedQuestions.ts",
+        "file:travel-h5/src/components/ChatBubble.vue"
+      ],
+      "languageLesson": "SSE (Server-Sent Events) 通过 fetch + ReadableStream 实现。服务端推送 event: chunk/data: xxx 格式的文本块，前端逐步渲染，产生打字机效果。"
+    },
+    {
+      "order": 6,
+      "title": "行程规划前端",
+      "description": "detail/index.vue 展示 AgentPipeline 组件（步骤指示器），可视化 4 个 Agent 的工作进度。规划完成后显示 SpotItem（每日景点卡片）和 BudgetTable（预算分解）。",
+      "nodeIds": [
+        "file:travel-h5/src/views/detail/index.vue",
+        "file:travel-h5/src/components/AgentPipeline.vue",
+        "file:travel-h5/src/components/SpotItem.vue",
+        "file:travel-h5/src/components/BudgetTable.vue"
+      ]
+    },
+    {
+      "order": 7,
+      "title": "后端服务入口",
+      "description": "src/index.ts 启动 Express 服务，注册 CORS 中间件和 JSON 解析，挂载 auth、travel、trip 三组路由。使用 authMiddleware 对需要认证的路由进行 JWT 保护。",
+      "nodeIds": [
+        "file:travel-server/src/index.ts",
+        "file:travel-server/src/middleware/auth.ts"
+      ],
+      "languageLesson": "Express 中间件通过 app.use() 注册，按顺序执行。全局中间件作用于所有路由，路由级中间件作用于指定路径。"
+    },
+    {
+      "order": 8,
+      "title": "API 路由层",
+      "description": "三组 RESTful 路由：auth.ts 处理注册/登录/个人信息，travel.ts 提供 AI 规划生成和对话 SSE 端点，trip.ts 管理行程的增删改查。travel 路由的 SSE 端点使用 proxy_buffering off 确保流式输出不被 Nginx 缓存。",
+      "nodeIds": [
+        "file:travel-server/src/routes/auth.ts",
+        "file:travel-server/src/routes/travel.ts",
+        "file:travel-server/src/routes/trip.ts"
+      ]
+    },
+    {
+      "order": 9,
+      "title": "LangGraph AI Agent 编排",
+      "description": "builder.ts 构建 7 节点 LangGraph 状态图：researcher（Tavily 搜索）→ weather（Open-Meteo）→ planner-llm（LLM + 3 工具：景点详情/交通/美食）→ reviewer（4 维度评分，< 70 分退回重试，最多 3 轮）→ budgeter（数学计算预算）→ finalizer（组装 TripPlan）。state.ts 定义 Agent 状态，routing.ts 控制条件路由，stream-adapter.ts 将 LangGraph 事件转为 SSE 格式。",
+      "nodeIds": [
+        "file:travel-server/src/services/agent/graph/builder.ts",
+        "file:travel-server/src/services/agent/graph/state.ts",
+        "file:travel-server/src/services/agent/graph/routing.ts",
+        "file:travel-server/src/services/agent/graph/stream-adapter.ts",
+        "file:travel-server/src/services/agent/graph/nodes/researcher.ts",
+        "file:travel-server/src/services/agent/graph/nodes/weather.ts",
+        "file:travel-server/src/services/agent/graph/nodes/planner-llm.ts",
+        "file:travel-server/src/services/agent/graph/nodes/reviewer.ts",
+        "file:travel-server/src/services/agent/graph/nodes/budgeter.ts",
+        "file:travel-server/src/services/agent/graph/nodes/finalizer.ts"
+      ],
+      "languageLesson": "LangGraph 使用 StateGraph 定义节点和边，每个节点是一个函数，接收状态并返回部分更新。条件边根据运行时状态决定走哪条路径。这里 reviewer 的评分阈值（70分）决定了是重试（循环回 planner）还是继续。"
+    },
+    {
+      "order": 10,
+      "title": "数据模型与服务层",
+      "description": "Prisma schema 定义了 4 张表（User、Trip、TripDay、ChatMessage），db.ts 导出 Prisma 单例。四个 Service（userService、travelService、chatService、tripService）封装业务逻辑，通过 Prisma 客户端操作 PostgreSQL。",
+      "nodeIds": [
+        "file:travel-server/src/services/db.ts",
+        "schema:travel-server/prisma/schema.prisma",
+        "file:travel-server/src/services/userService.ts",
+        "file:travel-server/src/services/travelService.ts",
+        "file:travel-server/src/services/chatService.ts",
+        "file:travel-server/src/services/tripService.ts"
+      ],
+      "languageLesson": "Prisma 是一个类型安全 ORM。schema.prisma 定义数据模型，prisma db push 同步到数据库，prisma generate 生成 TypeScript 类型。服务层通过单例 Prisma 客户端执行 CRUD 操作。"
+    },
+    {
+      "order": 11,
+      "title": "生产部署架构",
+      "description": "nginx.conf 配置反向代理：/api/* 转发到 Express (:3300)，其他请求服务 Vue 静态文件 (dist/)。关键优化：proxy_buffering off 确保 SSE 流式推送，gzip_static/brotli_static 零 CPU 开销返回预压缩文件，带 hash 的静态资源永久缓存。",
+      "nodeIds": [],
+      "languageLesson": "Nginx 作为反向代理时，proxy_pass 转发请求，proxy_set_header 透传原始信息。对于 SSE 流式端点，必须关闭 proxy_buffering 否则 Nginx 会缓存响应直到完成才一次性推送。"
+    }
+  ]
+}

@@ -100,9 +100,15 @@ router.post('/recommend-v2', async (req: Request, res: Response): Promise<void> 
  * AI 对话接口（SSE 流式）。
  * 已登录用户的历史对话会持久化到 ChatMessage 表，
  * 并作为上下文喂给 LLM，实现多轮对话。
+ *
+ * 请求体：
+ *   - message: string（必填）当前用户消息
+ *   - history?: Array<{ role: 'user'|'ai'; content: string }>（可选）前端本地对话历史
+ *     未登录用户依赖此字段获得多轮对话能力；
+ *     已登录用户以 DB 历史为准，前端 history 作为补充（DB 为空时使用）。
  */
 router.post('/chat', async (req: Request, res: Response): Promise<void> => {
-  const { message } = req.body
+  const { message, history: clientHistory } = req.body
   if (!message) {
     res.status(400).json({
       success: false,
@@ -122,7 +128,8 @@ router.post('/chat', async (req: Request, res: Response): Promise<void> => {
       )
     }
 
-    // 已登录：加载历史对话（最近 20 轮 = 40 条消息）
+    // 加载历史对话
+    // 优先级：DB 历史（已登录）> 客户端传来的 history（未登录 / 新用户补充）
     let history: Array<{ role: string; content: string }> = []
     if (userId) {
       try {
@@ -131,10 +138,21 @@ router.post('/chat', async (req: Request, res: Response): Promise<void> => {
           role: m.role,
           content: m.content,
         }))
-        console.log(`[chat] 加载了 ${history.length} 条历史消息 (userId=${userId})`)
+        console.log(`[chat] 从 DB 加载了 ${history.length} 条历史消息 (userId=${userId})`)
       } catch (e) {
         console.error('[chat] 加载历史对话失败:', e)
       }
+    }
+
+    // 如果 DB 历史为空（新用户或未登录），使用客户端传来的历史
+    if (history.length === 0 && Array.isArray(clientHistory) && clientHistory.length > 0) {
+      history = clientHistory
+        .filter(
+          (h: { role: string; content: string }) =>
+            (h.role === 'user' || h.role === 'ai') && typeof h.content === 'string'
+        )
+        .slice(-40) // 最多保留最近 40 条
+      console.log(`[chat] 使用客户端历史 ${history.length} 条消息`)
     }
 
     // 调用对话服务（传入历史上下文）

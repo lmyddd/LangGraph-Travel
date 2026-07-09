@@ -1,0 +1,214 @@
+[
+  {
+    "id": "layer:documentation",
+    "name": "文档层",
+    "description": "项目文档：README 项目说明、面试准备资料、学习指南",
+    "nodeIds": [
+      "document:README.md",
+      "document:JD面试准备-针对性问答.md",
+      "document:面试学习指南.md",
+      "document:travel-h5/README.md"
+    ]
+  },
+  {
+    "id": "layer:shared-types",
+    "name": "共享类型层",
+    "description": "前后端共享 TypeScript 类型定义，确保 API 契约一致",
+    "nodeIds": [
+      "file:shared/types.ts"
+    ]
+  },
+  {
+    "id": "layer:frontend-entry-config",
+    "name": "前端入口与配置",
+    "description": "Vue 应用入口、全局配置、构建工具链",
+    "nodeIds": [
+      "file:travel-h5/src/main.ts",
+      "file:travel-h5/src/App.vue",
+      "file:travel-h5/index.html",
+      "config:travel-h5/package.json",
+      "config:travel-h5/tsconfig.json",
+      "file:travel-h5/src/env.d.ts",
+      "file:travel-h5/components.d.ts",
+      "config:travel-h5/.gitignore"
+    ]
+  },
+  {
+    "id": "layer:frontend-routing",
+    "name": "前端路由层",
+    "description": "Vue Router 配置：7 条懒加载路由、路由守卫、JWT 拦截",
+    "nodeIds": [
+      "file:travel-h5/src/router/index.ts"
+    ]
+  },
+  {
+    "id": "layer:frontend-pages",
+    "name": "页面层",
+    "description": "7 个移动端页面：首页推荐、AI 对话、行程生成、历史记录、行程详情、登录注册、个人中心",
+    "nodeIds": [
+      "file:travel-h5/src/views/home/index.vue",
+      "file:travel-h5/src/views/chat/index.vue",
+      "file:travel-h5/src/views/detail/index.vue",
+      "file:travel-h5/src/views/history/index.vue",
+      "file:travel-h5/src/views/trip-detail/index.vue",
+      "file:travel-h5/src/views/login/index.vue",
+      "file:travel-h5/src/views/profile/index.vue"
+    ]
+  },
+  {
+    "id": "layer:frontend-components",
+    "name": "组件层",
+    "description": "可复用 UI 组件：聊天气泡、Agent 步骤指示器、城市卡片、景点卡片、预算图表、统计卡片、骨架屏、页面过渡",
+    "nodeIds": [
+      "file:travel-h5/src/components/ChatBubble.vue",
+      "file:travel-h5/src/components/AgentPipeline.vue",
+      "file:travel-h5/src/components/CityCard.vue",
+      "file:travel-h5/src/components/SpotItem.vue",
+      "file:travel-h5/src/components/BudgetTable.vue",
+      "file:travel-h5/src/components/StatCard.vue",
+      "file:travel-h5/src/components/SkeletonCard.vue",
+      "file:travel-h5/src/components/PageTransition.vue"
+    ]
+  },
+  {
+    "id": "layer:frontend-logic",
+    "name": "前端逻辑层",
+    "description": "Composable 函数（SSE 流管理、Markdown 渲染、追问建议、剪贴板、密码强度）+ Pinia 状态管理 + HTTP 客户端 + 工具函数",
+    "nodeIds": [
+      "file:travel-h5/src/composables/useAgentStream.ts",
+      "file:travel-h5/src/composables/useMarkdown.ts",
+      "file:travel-h5/src/composables/useSuggestedQuestions.ts",
+      "file:travel-h5/src/composables/useClipboard.ts",
+      "file:travel-h5/src/composables/usePasswordStrength.ts",
+      "file:travel-h5/src/store/user.ts",
+      "file:travel-h5/src/store/favorites.ts",
+      "file:travel-h5/src/utils/request.ts",
+      "file:travel-h5/src/utils/cities.ts"
+    ]
+  },
+  {
+    "id": "layer:frontend-style",
+    "name": "样式层",
+    "description": "全局 CSS 样式和设计变量",
+    "nodeIds": [
+      "file:travel-h5/src/style/common.css"
+    ]
+  },
+  {
+    "id": "layer:server-entry-config",
+    "name": "后端入口与配置",
+    "description": "Express 服务入口、环境变量、编译和运行配置",
+    "nodeIds": [
+      "file:travel-server/src/index.ts",
+      "config:travel-server/package.json",
+      "config:travel-server/tsconfig.json",
+      "config:travel-server/nodemon.json",
+      "config:travel-server/.env",
+      "config:travel-server/.env.example",
+      "config:travel-server/.gitignore"
+    ]
+  },
+  {
+    "id": "layer:api-routes",
+    "name": "API 路由层",
+    "description": "RESTful API 端点：认证、旅行规划、行程管理",
+    "nodeIds": [
+      "file:travel-server/src/routes/auth.ts",
+      "file:travel-server/src/routes/travel.ts",
+      "file:travel-server/src/routes/trip.ts"
+    ]
+  },
+  {
+    "id": "layer:middleware",
+    "name": "中间件层",
+    "description": "JWT 认证中间件：Token 验证、用户身份提取",
+    "nodeIds": [
+      "file:travel-server/src/middleware/auth.ts"
+    ]
+  },
+  {
+    "id": "layer:service-layer",
+    "name": "服务层",
+    "description": "业务逻辑服务：用户管理、行程编排、对话记录、行程 CRUD、Prisma 数据库连接",
+    "nodeIds": [
+      "file:travel-server/src/services/userService.ts",
+      "file:travel-server/src/services/travelService.ts",
+      "file:travel-server/src/services/chatService.ts",
+      "file:travel-server/src/services/tripService.ts",
+      "file:travel-server/src/services/db.ts"
+    ]
+  },
+  {
+    "id": "layer:ai-agent-orchestration",
+    "name": "AI Agent 编排层",
+    "description": "LangGraph 多 Agent 状态图：研究员、天气员、规划师（LLM+工具）、审核员、预算员、组装员，7 个节点 + 条件路由 + SSE 流适配",
+    "nodeIds": [
+      "file:travel-server/src/services/agent/graph/builder.ts",
+      "file:travel-server/src/services/agent/graph/index.ts",
+      "file:travel-server/src/services/agent/graph/state.ts",
+      "file:travel-server/src/services/agent/graph/routing.ts",
+      "file:travel-server/src/services/agent/graph/stream-adapter.ts",
+      "file:travel-server/src/services/agent/graph/nodes/researcher.ts",
+      "file:travel-server/src/services/agent/graph/nodes/weather.ts",
+      "file:travel-server/src/services/agent/graph/nodes/planner-llm.ts",
+      "file:travel-server/src/services/agent/graph/nodes/planner-tools.ts",
+      "file:travel-server/src/services/agent/graph/nodes/reviewer.ts",
+      "file:travel-server/src/services/agent/graph/nodes/budgeter.ts",
+      "file:travel-server/src/services/agent/graph/nodes/finalizer.ts",
+      "file:travel-server/src/services/agent/graph/tools/index.ts",
+      "file:travel-server/src/services/agent/graph/tools/search-details.ts",
+      "file:travel-server/src/services/agent/graph/tools/find-restaurants.ts",
+      "file:travel-server/src/services/agent/graph/tools/transport-info.ts",
+      "file:travel-server/src/services/agent/tools/search.ts",
+      "file:travel-server/src/services/agent/tools/weather.ts",
+      "file:travel-server/src/services/agent/tools/calculator.ts",
+      "file:travel-server/src/services/agent/schemas.ts",
+      "file:travel-server/src/services/agent/types.ts",
+      "file:travel-server/src/services/agent/utils/llm.ts"
+    ]
+  },
+  {
+    "id": "layer:data-layer",
+    "name": "数据层",
+    "description": "Prisma 数据库模型定义（User、Trip、TripDay、ChatMessage）、迁移记录、种子数据 + Prisma 生成的类型文件",
+    "nodeIds": [
+      "schema:travel-server/prisma/schema.prisma",
+      "file:travel-server/prisma/seed.ts",
+      "table:travel-server/prisma/migrations/20260615075541_init/migration.sql",
+      "config:travel-server/prisma/migrations/migration_lock.toml",
+      "file:travel-server/src/generated/client.ts",
+      "file:travel-server/src/generated/browser.ts",
+      "file:travel-server/src/generated/models.ts",
+      "file:travel-server/src/generated/enums.ts",
+      "file:travel-server/src/generated/commonInputTypes.ts",
+      "file:travel-server/src/generated/models/User.ts",
+      "file:travel-server/src/generated/models/Trip.ts",
+      "file:travel-server/src/generated/models/TripDay.ts",
+      "file:travel-server/src/generated/models/ChatMessage.ts",
+      "file:travel-server/src/generated/internal/class.ts",
+      "file:travel-server/src/generated/internal/prismaNamespace.ts",
+      "file:travel-server/src/generated/internal/prismaNamespaceBrowser.ts"
+    ]
+  },
+  {
+    "id": "layer:utility",
+    "name": "工具层",
+    "description": "通用工具函数：SSE 流处理、配置等",
+    "nodeIds": [
+      "file:travel-server/src/utils/streamUtils.ts",
+      "file:travel-h5/src/style/common.css"
+    ]
+  },
+  {
+    "id": "layer:infrastructure",
+    "name": "基础设施层",
+    "description": "Nginx 反向代理配置、Gzip/Brotli 压缩、SSE 流代理优化",
+    "nodeIds": []
+  },
+  {
+    "id": "layer:root-config",
+    "name": "根配置",
+    "description": "项目根级别的 Git 忽略规则配置",
+    "nodeIds": []
+  }
+]

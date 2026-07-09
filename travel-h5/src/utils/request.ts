@@ -103,12 +103,22 @@ export async function fetchStream(
   onError: ErrorCallback
 ): Promise<void> {
   const controller = new AbortController()
+  const userStore = useUserStore()
+
   try {
     // 使用相对路径，开发环境下由 Vite proxy 转发
     // Axios 不支持流式读取响应体（它会把整个响应加载到内存再返回）。SSE 需要边收边解析，所以用原生 fetch API
+    const headers: Record<string, string> = {
+      'Content-Type': 'application/json',
+      'Accept': 'text/event-stream',
+    }
+    if (userStore.token) {
+      headers['Authorization'] = `Bearer ${userStore.token}`
+    }
+
     const response = await fetch(`/api/travel/${url}`, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers,
       body: JSON.stringify(data),
       signal: controller.signal,
     })

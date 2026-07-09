@@ -414,7 +414,10 @@ onMounted(() => {
 /* 天数和人数并排 */
 .form-row {
   display: flex;
-  gap: 10px;
+}
+
+::v-deep(.van-field__label) {
+  margin: 0;
 }
 
 .half-field {

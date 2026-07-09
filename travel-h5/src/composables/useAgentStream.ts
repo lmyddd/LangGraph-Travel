@@ -89,7 +89,7 @@ function createInitialAgentStates(): Map<AgentName, AgentStateInfo> {
 
 export function useAgentStream(): UseAgentStreamReturn {
   // ---- 响应式状态 ----
-  const tripPlan = ref<TripPlan | null>(null) as Ref<TripPlan | null>
+  const tripPlan = ref<TripPlan | null>(null)
   const isLoading = ref(false)
   const errorMsg = ref('')
   const streamingContent = ref('')

@@ -45,22 +45,32 @@
       </div>
     </div>
 
-    <!-- 当前活跃消息 -->
+    <!-- 所有 Agent 日志叠加显示 -->
     <div
-      v-if="activeAgent"
-      class="active-message"
+      v-if="hasAnyMessage"
+      class="agent-logs"
     >
-      <div class="message-header">
-        <span class="agent-name">{{ AGENT_LABELS[activeAgent.name] || activeAgent.name }}</span>
-        <span class="status-badge" :class="`badge-${activeAgent.status}`">
-          {{ STATUS_LABELS[activeAgent.status] }}
-        </span>
-      </div>
-      <div class="message-body">
-        {{ activeAgent.status === 'running' ? activeAgent.message : activeAgent.summary || activeAgent.message }}
-      </div>
-      <div v-if="activeAgent.status === 'error' && activeAgent.error" class="message-error">
-        ⚠️ {{ activeAgent.error }}
+      <div
+        v-for="agent in agentsWithMessages"
+        :key="agent.name"
+        class="agent-log-item"
+        :class="`log-${agent.status}`"
+      >
+        <div class="message-header">
+          <span class="agent-name">
+            <span class="status-dot" :class="`dot-${agent.status}`"></span>
+            {{ AGENT_LABELS[agent.name] || agent.name }}
+          </span>
+          <span class="status-badge" :class="`badge-${agent.status}`">
+            {{ STATUS_LABELS[agent.status] }}
+          </span>
+        </div>
+        <div class="message-body">
+          {{ agent.status === 'running' ? agent.message : agent.summary || agent.message }}
+        </div>
+        <div v-if="agent.status === 'error' && agent.error" class="message-error">
+          ⚠️ {{ agent.error }}
+        </div>
       </div>
     </div>
   </div>
@@ -125,23 +135,16 @@ const STATUS_LABELS: Record<string, string> = {
 }
 
 // ---- 计算属性 ----
-/** 当前最需要关注的 Agent：优先 running → 最近完成的 */
-const activeAgent = computed<AgentStateInfo | null>(() => {
-  // 优先显示正在运行的
-  const running = props.agents.find((a) => a.status === 'running')
-  if (running) return running
+/** 所有有消息需要展示的 Agent（叠加显示，不替换） */
+const agentsWithMessages = computed<AgentStateInfo[]>(() => {
+  return props.agents.filter(
+    (a) => a.status !== 'idle' || a.message
+  )
+})
 
-  // 如果有出错的，显示错误
-  const errored = props.agents.find((a) => a.status === 'error')
-  if (errored) return errored
-
-  // 显示最后一个已完成的
-  const completed = [...props.agents].reverse().find((a) => a.status === 'complete')
-  if (completed) return completed
-
-  // 显示第一个 idle 的
-  const idle = props.agents.find((a) => a.status === 'idle')
-  return idle || null
+/** 是否有任何消息需要展示 */
+const hasAnyMessage = computed<boolean>(() => {
+  return agentsWithMessages.value.length > 0
 })
 </script>
 
@@ -243,13 +246,62 @@ const activeAgent = computed<AgentStateInfo | null>(() => {
   background: #07c160;
 }
 
-/* ---- 活跃消息 ---- */
-.active-message {
+/* ---- Agent 日志叠加列表 ---- */
+.agent-logs {
   margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.agent-log-item {
   padding: 10px 12px;
-  background: #f7f8fa;
   border-radius: 8px;
   border-left: 3px solid #1989fa;
+  background: #f7f8fa;
+  transition: all 0.3s ease;
+}
+
+.agent-log-item.log-running {
+  border-left-color: #1989fa;
+  background: #f0f7ff;
+}
+
+.agent-log-item.log-complete {
+  border-left-color: #07c160;
+  background: #f7f8fa;
+}
+
+.agent-log-item.log-error {
+  border-left-color: #ee0a24;
+  background: #fff8f8;
+}
+
+/* 状态小圆点 */
+.status-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+.dot-idle {
+  background: #c8c9cc;
+}
+
+.dot-running {
+  background: #1989fa;
+  animation: pulse-dot 1.5s infinite;
+}
+
+.dot-complete {
+  background: #07c160;
+}
+
+.dot-error {
+  background: #ee0a24;
 }
 
 .message-header {
@@ -312,6 +364,15 @@ const activeAgent = computed<AgentStateInfo | null>(() => {
   }
   50% {
     box-shadow: 0 0 0 6px rgba(25, 137, 250, 0);
+  }
+}
+
+@keyframes pulse-dot {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
   }
 }
 </style>

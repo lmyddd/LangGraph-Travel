@@ -1,0 +1,122 @@
+[
+  {
+    "order": 1,
+    "title": "项目概览",
+    "description": "阅读 README 了解项目全貌：智游（Travel-AI）是一个基于 Vue 3 + TypeScript 的移动端 AI 旅行规划应用，采用 LangGraph 多 Agent 协作架构，通过 SSE 流式推送 Agent 工作进度。核心亮点包括：多 Agent 协作编排、SSE 实时可视化、JWT 认证、生产级工程化。",
+    "nodeIds": [
+      "document:README.md"
+    ]
+  },
+  {
+    "order": 2,
+    "title": "共享类型定义",
+    "description": "前后端 API 契约的核心——shared/types.ts 定义了 User、TripPlan、DailyItinerary、AgentEvent 等 15 个共享类型，确保前后端数据结构一致。这是了解系统数据模型的起点。",
+    "nodeIds": [
+      "file:shared/types.ts"
+    ]
+  },
+  {
+    "order": 3,
+    "title": "前端应用入口",
+    "description": "main.ts 创建 Vue 应用实例，注册 Pinia 状态管理、Vue Router 路由、Vant 组件库，然后挂载到 #app。App.vue 是根组件，包含底部 TabBar 导航和页面过渡动画 PageTransition。",
+    "nodeIds": [
+      "file:travel-h5/src/main.ts",
+      "file:travel-h5/src/App.vue",
+      "file:travel-h5/index.html"
+    ],
+    "languageLesson": "Vue 3 应用通过 createApp() 创建实例，使用 app.use() 注册插件（Router、Pinia）。main.ts 是整个前端的入口文件，App.vue 是根组件。"
+  },
+  {
+    "order": 4,
+    "title": "前端路由系统",
+    "description": "router/index.ts 定义了 7 条懒加载路由（首页、AI 对话、行程生成、历史记录、行程详情、登录注册、个人中心）。路由守卫在每次导航前检查 Pinia store 中的认证状态，自动拦截未登录用户。",
+    "nodeIds": [
+      "file:travel-h5/src/router/index.ts",
+      "file:travel-h5/src/store/user.ts"
+    ],
+    "languageLesson": "Vue Router 的路由懒加载使用 () => import() 语法实现代码分割。全局前置守卫 beforeEach 检查 JWT Token 有效性，实现前端路由级权限控制。"
+  },
+  {
+    "order": 5,
+    "title": "AI 对话核心流程",
+    "description": "chat/index.vue 是用户与 AI 交互的主战场。useAgentStream.ts（SSE 状态机）管理连接生命周期和流式解析，ChatBubble.vue 使用自研的 useMarkdown.ts 渲染 Markdown 回复，useSuggestedQuestions.ts 智能生成追问建议。SSE 失败时自动降级为 JSON 模式。",
+    "nodeIds": [
+      "file:travel-h5/src/views/chat/index.vue",
+      "file:travel-h5/src/composables/useAgentStream.ts",
+      "file:travel-h5/src/composables/useMarkdown.ts",
+      "file:travel-h5/src/composables/useSuggestedQuestions.ts",
+      "file:travel-h5/src/components/ChatBubble.vue"
+    ],
+    "languageLesson": "SSE (Server-Sent Events) 通过 fetch + ReadableStream 实现。服务端推送 event: chunk/data: xxx 格式的文本块，前端逐步渲染，产生打字机效果。"
+  },
+  {
+    "order": 6,
+    "title": "行程规划前端",
+    "description": "detail/index.vue 展示 AgentPipeline 组件（步骤指示器），可视化 4 个 Agent 的工作进度。规划完成后显示 SpotItem（每日景点卡片）和 BudgetTable（预算分解）。",
+    "nodeIds": [
+      "file:travel-h5/src/views/detail/index.vue",
+      "file:travel-h5/src/components/AgentPipeline.vue",
+      "file:travel-h5/src/components/SpotItem.vue",
+      "file:travel-h5/src/components/BudgetTable.vue"
+    ]
+  },
+  {
+    "order": 7,
+    "title": "后端服务入口",
+    "description": "src/index.ts 启动 Express 服务，注册 CORS 中间件和 JSON 解析，挂载 auth、travel、trip 三组路由。使用 authMiddleware 对需要认证的路由进行 JWT 保护。",
+    "nodeIds": [
+      "file:travel-server/src/index.ts",
+      "file:travel-server/src/middleware/auth.ts"
+    ],
+    "languageLesson": "Express 中间件通过 app.use() 注册，按顺序执行。全局中间件作用于所有路由，路由级中间件作用于指定路径。"
+  },
+  {
+    "order": 8,
+    "title": "API 路由层",
+    "description": "三组 RESTful 路由：auth.ts 处理注册/登录/个人信息，travel.ts 提供 AI 规划生成和对话 SSE 端点，trip.ts 管理行程的增删改查。travel 路由的 SSE 端点使用 proxy_buffering off 确保流式输出不被 Nginx 缓存。",
+    "nodeIds": [
+      "file:travel-server/src/routes/auth.ts",
+      "file:travel-server/src/routes/travel.ts",
+      "file:travel-server/src/routes/trip.ts"
+    ]
+  },
+  {
+    "order": 9,
+    "title": "LangGraph AI Agent 编排",
+    "description": "builder.ts 构建 7 节点 LangGraph 状态图：researcher（Tavily 搜索）→ weather（Open-Meteo）→ planner-llm（LLM + 3 工具：景点详情/交通/美食）→ reviewer（4 维度评分，< 70 分退回重试，最多 3 轮）→ budgeter（数学计算预算）→ finalizer（组装 TripPlan）。state.ts 定义 Agent 状态，routing.ts 控制条件路由，stream-adapter.ts 将 LangGraph 事件转为 SSE 格式。",
+    "nodeIds": [
+      "file:travel-server/src/services/agent/graph/builder.ts",
+      "file:travel-server/src/services/agent/graph/state.ts",
+      "file:travel-server/src/services/agent/graph/routing.ts",
+      "file:travel-server/src/services/agent/graph/stream-adapter.ts",
+      "file:travel-server/src/services/agent/graph/nodes/researcher.ts",
+      "file:travel-server/src/services/agent/graph/nodes/weather.ts",
+      "file:travel-server/src/services/agent/graph/nodes/planner-llm.ts",
+      "file:travel-server/src/services/agent/graph/nodes/reviewer.ts",
+      "file:travel-server/src/services/agent/graph/nodes/budgeter.ts",
+      "file:travel-server/src/services/agent/graph/nodes/finalizer.ts"
+    ],
+    "languageLesson": "LangGraph 使用 StateGraph 定义节点和边，每个节点是一个函数，接收状态并返回部分更新。条件边根据运行时状态决定走哪条路径。这里 reviewer 的评分阈值（70分）决定了是重试（循环回 planner）还是继续。"
+  },
+  {
+    "order": 10,
+    "title": "数据模型与服务层",
+    "description": "Prisma schema 定义了 4 张表（User、Trip、TripDay、ChatMessage），db.ts 导出 Prisma 单例。四个 Service（userService、travelService、chatService、tripService）封装业务逻辑，通过 Prisma 客户端操作 PostgreSQL。",
+    "nodeIds": [
+      "file:travel-server/src/services/db.ts",
+      "schema:travel-server/prisma/schema.prisma",
+      "file:travel-server/src/services/userService.ts",
+      "file:travel-server/src/services/travelService.ts",
+      "file:travel-server/src/services/chatService.ts",
+      "file:travel-server/src/services/tripService.ts"
+    ],
+    "languageLesson": "Prisma 是一个类型安全 ORM。schema.prisma 定义数据模型，prisma db push 同步到数据库，prisma generate 生成 TypeScript 类型。服务层通过单例 Prisma 客户端执行 CRUD 操作。"
+  },
+  {
+    "order": 11,
+    "title": "生产部署架构",
+    "description": "nginx.conf 配置反向代理：/api/* 转发到 Express (:3300)，其他请求服务 Vue 静态文件 (dist/)。关键优化：proxy_buffering off 确保 SSE 流式推送，gzip_static/brotli_static 零 CPU 开销返回预压缩文件，带 hash 的静态资源永久缓存。",
+    "nodeIds": [],
+    "languageLesson": "Nginx 作为反向代理时，proxy_pass 转发请求，proxy_set_header 透传原始信息。对于 SSE 流式端点，必须关闭 proxy_buffering 否则 Nginx 会缓存响应直到完成才一次性推送。"
+  }
+]

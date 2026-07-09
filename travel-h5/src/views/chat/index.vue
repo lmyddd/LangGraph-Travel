@@ -173,7 +173,14 @@ const getAiResponse = (userMsg: string): void => {
     timestamp: new Date().toISOString()
   })
   let fullResponse = ''
-  fetchStream('chat', { message: userMsg }, (chunk: string) => {
+
+  // 构建对话历史（最近 10 轮 = 20 条消息），传给后端作为上下文
+  const history = messages.value
+    .filter((m) => m.role !== 'ai' || m.content !== '') // 排除正在流式生成的空 AI 消息
+    .slice(-21, -1) // 取倒数第 21 到倒数第 2 条（排除刚 push 的空 AI 占位消息）
+    .map((m) => ({ role: m.role, content: m.content }))
+
+  fetchStream('chat', { message: userMsg, history }, (chunk: string) => {
     fullResponse += chunk
     const lastMsg = messages.value[messages.value.length - 1]
     if (lastMsg && lastMsg.role === 'ai') {

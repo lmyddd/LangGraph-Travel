@@ -1,0 +1,887 @@
+{
+  "gitCommitHash": "b8774a9f544fc183569256983dba1f9c3a0bedf9",
+  "files": {
+    "./.gitignore": {
+      "path": "./.gitignore",
+      "language": "text",
+      "fileCategory": "config",
+      "lines": 9,
+      "importCount": 0,
+      "exportCount": 0,
+      "hash": "e29d196db45c89c1"
+    },
+    "./JD面试准备-针对性问答.md": {
+      "path": "./JD面试准备-针对性问答.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "lines": 393,
+      "importCount": 0,
+      "exportCount": 0,
+      "hash": "32f6133ea6122e7a"
+    },
+    "./nginx.conf": {
+      "path": "./nginx.conf",
+      "language": "nginx",
+      "fileCategory": "code",
+      "lines": 121,
+      "importCount": 0,
+      "exportCount": 0,
+      "hash": "d72183bfbc7269d3"
+    },
+    "./README.md": {
+      "path": "./README.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "lines": 391,
+      "importCount": 0,
+      "exportCount": 0,
+      "hash": "c78cd6288d901ddb"
+    },
+    "./shared/types.ts": {
+      "path": "./shared/types.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 169,
+      "importCount": 0,
+      "exportCount": 14,
+      "hash": "d9313c2a2e5015dd"
+    },
+    "./travel-h5/.gitignore": {
+      "path": "./travel-h5/.gitignore",
+      "language": "text",
+      "fileCategory": "config",
+      "lines": 29,
+      "importCount": 0,
+      "exportCount": 0,
+      "hash": "c74d15e0c4578de2"
+    },
+    "./travel-h5/components.d.ts": {
+      "path": "./travel-h5/components.d.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 46,
+      "importCount": 0,
+      "exportCount": 1,
+      "hash": "65cb453dd8925d4b"
+    },
+    "./travel-h5/index.html": {
+      "path": "./travel-h5/index.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "lines": 20,
+      "importCount": 0,
+      "exportCount": 0,
+      "hash": "e5d32aa60eba1df8"
+    },
+    "./travel-h5/package.json": {
+      "path": "./travel-h5/package.json",
+      "language": "json",
+      "fileCategory": "config",
+      "lines": 35,
+      "importCount": 0,
+      "exportCount": 0,
+      "hash": "3c27505ab101bf07"
+    },
+    "./travel-h5/README.md": {
+      "path": "./travel-h5/README.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "lines": 6,
+      "importCount": 0,
+      "exportCount": 0,
+      "hash": "309627dbb136135f"
+    },
+    "./travel-h5/src/App.vue": {
+      "path": "./travel-h5/src/App.vue",
+      "language": "vue",
+      "fileCategory": "code",
+      "lines": 99,
+      "importCount": 3,
+      "exportCount": 0,
+      "hash": "c94758940f4d3a2c"
+    },
+    "./travel-h5/src/components/AgentPipeline.vue": {
+      "path": "./travel-h5/src/components/AgentPipeline.vue",
+      "language": "vue",
+      "fileCategory": "code",
+      "lines": 318,
+      "importCount": 3,
+      "exportCount": 0,
+      "hash": "52bf4a1e8f113dd7"
+    },
+    "./travel-h5/src/components/BudgetTable.vue": {
+      "path": "./travel-h5/src/components/BudgetTable.vue",
+      "language": "vue",
+      "fileCategory": "code",
+      "lines": 153,
+      "importCount": 1,
+      "exportCount": 0,
+      "hash": "b5db53137168c50f"
+    },
+    "./travel-h5/src/components/ChatBubble.vue": {
+      "path": "./travel-h5/src/components/ChatBubble.vue",
+      "language": "vue",
+      "fileCategory": "code",
+      "lines": 544,
+      "importCount": 4,
+      "exportCount": 1,
+      "hash": "7759d74b7a3c70db"
+    },
+    "./travel-h5/src/components/CityCard.vue": {
+      "path": "./travel-h5/src/components/CityCard.vue",
+      "language": "vue",
+      "fileCategory": "code",
+      "lines": 95,
+      "importCount": 0,
+      "exportCount": 0,
+      "hash": "c46a7e6c602e3bd8"
+    },
+    "./travel-h5/src/components/PageTransition.vue": {
+      "path": "./travel-h5/src/components/PageTransition.vue",
+      "language": "vue",
+      "fileCategory": "code",
+      "lines": 12,
+      "importCount": 0,
+      "exportCount": 0,
+      "hash": "898f955a6512aea0"
+    },
+    "./travel-h5/src/components/SkeletonCard.vue": {
+      "path": "./travel-h5/src/components/SkeletonCard.vue",
+      "language": "vue",
+      "fileCategory": "code",
+      "lines": 48,
+      "importCount": 0,
+      "exportCount": 0,
+      "hash": "a2f89a422bea541c"
+    },
+    "./travel-h5/src/components/SpotItem.vue": {
+      "path": "./travel-h5/src/components/SpotItem.vue",
+      "language": "vue",
+      "fileCategory": "code",
+      "lines": 305,
+      "importCount": 0,
+      "exportCount": 1,
+      "hash": "7c503769f83a0f22"
+    },
+    "./travel-h5/src/components/StatCard.vue": {
+      "path": "./travel-h5/src/components/StatCard.vue",
+      "language": "vue",
+      "fileCategory": "code",
+      "lines": 62,
+      "importCount": 1,
+      "exportCount": 0,
+      "hash": "777489ad1320fcb7"
+    },
+    "./travel-h5/src/composables/useAgentStream.ts": {
+      "path": "./travel-h5/src/composables/useAgentStream.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 322,
+      "importCount": 3,
+      "exportCount": 2,
+      "hash": "5090652db14b0df3"
+    },
+    "./travel-h5/src/composables/useClipboard.ts": {
+      "path": "./travel-h5/src/composables/useClipboard.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 35,
+      "importCount": 0,
+      "exportCount": 1,
+      "hash": "4148df157a183c3d"
+    },
+    "./travel-h5/src/composables/useMarkdown.ts": {
+      "path": "./travel-h5/src/composables/useMarkdown.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 345,
+      "importCount": 14,
+      "exportCount": 3,
+      "hash": "caa09f50fa2af479"
+    },
+    "./travel-h5/src/composables/usePasswordStrength.ts": {
+      "path": "./travel-h5/src/composables/usePasswordStrength.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 44,
+      "importCount": 1,
+      "exportCount": 2,
+      "hash": "222f9beafbd196fd"
+    },
+    "./travel-h5/src/composables/useSuggestedQuestions.ts": {
+      "path": "./travel-h5/src/composables/useSuggestedQuestions.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 69,
+      "importCount": 0,
+      "exportCount": 1,
+      "hash": "a4313da87ca96492"
+    },
+    "./travel-h5/src/env.d.ts": {
+      "path": "./travel-h5/src/env.d.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 8,
+      "importCount": 1,
+      "exportCount": 0,
+      "hash": "b61ba723029bad40"
+    },
+    "./travel-h5/src/main.ts": {
+      "path": "./travel-h5/src/main.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 37,
+      "importCount": 5,
+      "exportCount": 0,
+      "hash": "8fb357c92f2f4804"
+    },
+    "./travel-h5/src/router/index.ts": {
+      "path": "./travel-h5/src/router/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 83,
+      "importCount": 2,
+      "exportCount": 0,
+      "hash": "95cd8e8bb6eff5ba"
+    },
+    "./travel-h5/src/store/favorites.ts": {
+      "path": "./travel-h5/src/store/favorites.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 56,
+      "importCount": 2,
+      "exportCount": 1,
+      "hash": "421d9471be51c1fa"
+    },
+    "./travel-h5/src/store/user.ts": {
+      "path": "./travel-h5/src/store/user.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 64,
+      "importCount": 3,
+      "exportCount": 2,
+      "hash": "ea9b365cbde279d1"
+    },
+    "./travel-h5/src/style/common.css": {
+      "path": "./travel-h5/src/style/common.css",
+      "language": "css",
+      "fileCategory": "code",
+      "lines": 377,
+      "importCount": 0,
+      "exportCount": 0,
+      "hash": "70e575c256fecdad"
+    },
+    "./travel-h5/src/utils/cities.ts": {
+      "path": "./travel-h5/src/utils/cities.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 153,
+      "importCount": 0,
+      "exportCount": 6,
+      "hash": "dc9542d04a37f052"
+    },
+    "./travel-h5/src/utils/request.ts": {
+      "path": "./travel-h5/src/utils/request.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 274,
+      "importCount": 3,
+      "exportCount": 9,
+      "hash": "e0e8297b96dcb9d4"
+    },
+    "./travel-h5/src/views/chat/index.vue": {
+      "path": "./travel-h5/src/views/chat/index.vue",
+      "language": "vue",
+      "fileCategory": "code",
+      "lines": 530,
+      "importCount": 7,
+      "exportCount": 0,
+      "hash": "aa910973c1581820"
+    },
+    "./travel-h5/src/views/detail/index.vue": {
+      "path": "./travel-h5/src/views/detail/index.vue",
+      "language": "vue",
+      "fileCategory": "code",
+      "lines": 585,
+      "importCount": 9,
+      "exportCount": 0,
+      "hash": "4086f8914e2c3c43"
+    },
+    "./travel-h5/src/views/history/index.vue": {
+      "path": "./travel-h5/src/views/history/index.vue",
+      "language": "vue",
+      "fileCategory": "code",
+      "lines": 354,
+      "importCount": 5,
+      "exportCount": 0,
+      "hash": "96630b42b159ec64"
+    },
+    "./travel-h5/src/views/home/index.vue": {
+      "path": "./travel-h5/src/views/home/index.vue",
+      "language": "vue",
+      "fileCategory": "code",
+      "lines": 629,
+      "importCount": 6,
+      "exportCount": 0,
+      "hash": "1a459fe03013329b"
+    },
+    "./travel-h5/src/views/login/index.vue": {
+      "path": "./travel-h5/src/views/login/index.vue",
+      "language": "vue",
+      "fileCategory": "code",
+      "lines": 683,
+      "importCount": 7,
+      "exportCount": 0,
+      "hash": "82a41f7fad3e5009"
+    },
+    "./travel-h5/src/views/profile/index.vue": {
+      "path": "./travel-h5/src/views/profile/index.vue",
+      "language": "vue",
+      "fileCategory": "code",
+      "lines": 423,
+      "importCount": 7,
+      "exportCount": 0,
+      "hash": "eecf0204ef43e360"
+    },
+    "./travel-h5/src/views/trip-detail/index.vue": {
+      "path": "./travel-h5/src/views/trip-detail/index.vue",
+      "language": "vue",
+      "fileCategory": "code",
+      "lines": 465,
+      "importCount": 5,
+      "exportCount": 0,
+      "hash": "3a8acaf0235c703b"
+    },
+    "./travel-h5/tsconfig.json": {
+      "path": "./travel-h5/tsconfig.json",
+      "language": "json",
+      "fileCategory": "config",
+      "lines": 28,
+      "importCount": 0,
+      "exportCount": 0,
+      "hash": "2b82a76cad37dd44"
+    },
+    "./travel-h5/vite.config.ts": {
+      "path": "./travel-h5/vite.config.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 82,
+      "importCount": 6,
+      "exportCount": 0,
+      "hash": "fc312f5c797d9be6"
+    },
+    "./travel-server/.env": {
+      "path": "./travel-server/.env",
+      "language": "dotenv",
+      "fileCategory": "config",
+      "lines": 26,
+      "importCount": 0,
+      "exportCount": 0,
+      "hash": "534a8f2b5a7a2b76"
+    },
+    "./travel-server/.env.example": {
+      "path": "./travel-server/.env.example",
+      "language": "dotenv",
+      "fileCategory": "config",
+      "lines": 27,
+      "importCount": 0,
+      "exportCount": 0,
+      "hash": "c2a37a0ccb4ee8a1"
+    },
+    "./travel-server/.gitignore": {
+      "path": "./travel-server/.gitignore",
+      "language": "text",
+      "fileCategory": "config",
+      "lines": 22,
+      "importCount": 0,
+      "exportCount": 0,
+      "hash": "4b88d4743d215bc5"
+    },
+    "./travel-server/nodemon.json": {
+      "path": "./travel-server/nodemon.json",
+      "language": "json",
+      "fileCategory": "config",
+      "lines": 9,
+      "importCount": 0,
+      "exportCount": 0,
+      "hash": "0f62ecdc09bc008a"
+    },
+    "./travel-server/package.json": {
+      "path": "./travel-server/package.json",
+      "language": "json",
+      "fileCategory": "config",
+      "lines": 48,
+      "importCount": 0,
+      "exportCount": 0,
+      "hash": "7c3b070bbd57cfb7"
+    },
+    "./travel-server/prisma/migrations/20260615075541_init/migration.sql": {
+      "path": "./travel-server/prisma/migrations/20260615075541_init/migration.sql",
+      "language": "sql",
+      "fileCategory": "data",
+      "lines": 59,
+      "importCount": 0,
+      "exportCount": 0,
+      "hash": "4fca82de19aa7b45"
+    },
+    "./travel-server/prisma/migrations/migration_lock.toml": {
+      "path": "./travel-server/prisma/migrations/migration_lock.toml",
+      "language": "toml",
+      "fileCategory": "config",
+      "lines": 4,
+      "importCount": 0,
+      "exportCount": 0,
+      "hash": "99836963713b4f5b"
+    },
+    "./travel-server/prisma/schema.prisma": {
+      "path": "./travel-server/prisma/schema.prisma",
+      "language": "prisma",
+      "fileCategory": "schema",
+      "lines": 68,
+      "importCount": 0,
+      "exportCount": 0,
+      "hash": "69223c69af326696"
+    },
+    "./travel-server/prisma/seed.ts": {
+      "path": "./travel-server/prisma/seed.ts",
+      "language": "typescript",
+      "fileCategory": "script",
+      "lines": 69,
+      "importCount": 5,
+      "exportCount": 0,
+      "hash": "e45f5374ce287d67"
+    },
+    "./travel-server/prisma.config.ts": {
+      "path": "./travel-server/prisma.config.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 15,
+      "importCount": 1,
+      "exportCount": 0,
+      "hash": "a7e2ee416a08614c"
+    },
+    "./travel-server/src/generated/browser.ts": {
+      "path": "./travel-server/src/generated/browser.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 40,
+      "importCount": 1,
+      "exportCount": 4,
+      "hash": "97f8d56b26998cfa"
+    },
+    "./travel-server/src/generated/client.ts": {
+      "path": "./travel-server/src/generated/client.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 64,
+      "importCount": 7,
+      "exportCount": 6,
+      "hash": "8e98376e965cc407"
+    },
+    "./travel-server/src/generated/commonInputTypes.ts": {
+      "path": "./travel-server/src/generated/commonInputTypes.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 395,
+      "importCount": 3,
+      "exportCount": 28,
+      "hash": "66f8d8a82abe9476"
+    },
+    "./travel-server/src/generated/enums.ts": {
+      "path": "./travel-server/src/generated/enums.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 16,
+      "importCount": 0,
+      "exportCount": 0,
+      "hash": "ebbdce75bbdd503c"
+    },
+    "./travel-server/src/generated/internal/class.ts": {
+      "path": "./travel-server/src/generated/internal/class.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 235,
+      "importCount": 2,
+      "exportCount": 4,
+      "hash": "c952de42ac9dce95"
+    },
+    "./travel-server/src/generated/internal/prismaNamespace.ts": {
+      "path": "./travel-server/src/generated/internal/prismaNamespace.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 1084,
+      "importCount": 3,
+      "exportCount": 121,
+      "hash": "92a4fa25f57682d3"
+    },
+    "./travel-server/src/generated/internal/prismaNamespaceBrowser.ts": {
+      "path": "./travel-server/src/generated/internal/prismaNamespaceBrowser.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 162,
+      "importCount": 1,
+      "exportCount": 29,
+      "hash": "633e6fb113a85ae4"
+    },
+    "./travel-server/src/generated/models/ChatMessage.ts": {
+      "path": "./travel-server/src/generated/models/ChatMessage.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 1391,
+      "importCount": 3,
+      "exportCount": 81,
+      "hash": "719855404f718b89"
+    },
+    "./travel-server/src/generated/models/Trip.ts": {
+      "path": "./travel-server/src/generated/models/Trip.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 1585,
+      "importCount": 3,
+      "exportCount": 97,
+      "hash": "c3c3a41df206146c"
+    },
+    "./travel-server/src/generated/models/TripDay.ts": {
+      "path": "./travel-server/src/generated/models/TripDay.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 1414,
+      "importCount": 3,
+      "exportCount": 81,
+      "hash": "67e4394b576785c7"
+    },
+    "./travel-server/src/generated/models/User.ts": {
+      "path": "./travel-server/src/generated/models/User.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 1535,
+      "importCount": 3,
+      "exportCount": 93,
+      "hash": "61610e7658d715ef"
+    },
+    "./travel-server/src/generated/models.ts": {
+      "path": "./travel-server/src/generated/models.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 15,
+      "importCount": 0,
+      "exportCount": 5,
+      "hash": "2dd556fff288dd85"
+    },
+    "./travel-server/src/index.ts": {
+      "path": "./travel-server/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 55,
+      "importCount": 6,
+      "exportCount": 0,
+      "hash": "2d7e01e02c2c967a"
+    },
+    "./travel-server/src/middleware/auth.ts": {
+      "path": "./travel-server/src/middleware/auth.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 75,
+      "importCount": 2,
+      "exportCount": 2,
+      "hash": "c7031ab1904a182e"
+    },
+    "./travel-server/src/routes/auth.ts": {
+      "path": "./travel-server/src/routes/auth.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 240,
+      "importCount": 4,
+      "exportCount": 0,
+      "hash": "576933634e2c4c3b"
+    },
+    "./travel-server/src/routes/travel.ts": {
+      "path": "./travel-server/src/routes/travel.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 226,
+      "importCount": 7,
+      "exportCount": 0,
+      "hash": "3f92484b663185d3"
+    },
+    "./travel-server/src/routes/trip.ts": {
+      "path": "./travel-server/src/routes/trip.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 100,
+      "importCount": 2,
+      "exportCount": 0,
+      "hash": "7674a21b1a761095"
+    },
+    "./travel-server/src/services/agent/graph/builder.ts": {
+      "path": "./travel-server/src/services/agent/graph/builder.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 106,
+      "importCount": 10,
+      "exportCount": 1,
+      "hash": "27372744298b6254"
+    },
+    "./travel-server/src/services/agent/graph/index.ts": {
+      "path": "./travel-server/src/services/agent/graph/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 159,
+      "importCount": 3,
+      "exportCount": 2,
+      "hash": "a5d655de7665ceaa"
+    },
+    "./travel-server/src/services/agent/graph/nodes/budgeter.ts": {
+      "path": "./travel-server/src/services/agent/graph/nodes/budgeter.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 101,
+      "importCount": 3,
+      "exportCount": 1,
+      "hash": "5d84c5352f868989"
+    },
+    "./travel-server/src/services/agent/graph/nodes/finalizer.ts": {
+      "path": "./travel-server/src/services/agent/graph/nodes/finalizer.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 103,
+      "importCount": 2,
+      "exportCount": 1,
+      "hash": "bb3cd34ce489b204"
+    },
+    "./travel-server/src/services/agent/graph/nodes/planner-llm.ts": {
+      "path": "./travel-server/src/services/agent/graph/nodes/planner-llm.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 447,
+      "importCount": 3,
+      "exportCount": 1,
+      "hash": "ea01a58396f37b78"
+    },
+    "./travel-server/src/services/agent/graph/nodes/planner-tools.ts": {
+      "path": "./travel-server/src/services/agent/graph/nodes/planner-tools.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 137,
+      "importCount": 3,
+      "exportCount": 1,
+      "hash": "fff9a0a73d9b0290"
+    },
+    "./travel-server/src/services/agent/graph/nodes/researcher.ts": {
+      "path": "./travel-server/src/services/agent/graph/nodes/researcher.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 85,
+      "importCount": 3,
+      "exportCount": 1,
+      "hash": "ff770ffdaa044041"
+    },
+    "./travel-server/src/services/agent/graph/nodes/reviewer.ts": {
+      "path": "./travel-server/src/services/agent/graph/nodes/reviewer.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 381,
+      "importCount": 4,
+      "exportCount": 1,
+      "hash": "f551865e70cecb4c"
+    },
+    "./travel-server/src/services/agent/graph/nodes/weather.ts": {
+      "path": "./travel-server/src/services/agent/graph/nodes/weather.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 112,
+      "importCount": 3,
+      "exportCount": 1,
+      "hash": "2d9ce26c9d53fa02"
+    },
+    "./travel-server/src/services/agent/graph/routing.ts": {
+      "path": "./travel-server/src/services/agent/graph/routing.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 76,
+      "importCount": 2,
+      "exportCount": 2,
+      "hash": "d1a31b8f0334f2f2"
+    },
+    "./travel-server/src/services/agent/graph/state.ts": {
+      "path": "./travel-server/src/services/agent/graph/state.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 144,
+      "importCount": 4,
+      "exportCount": 3,
+      "hash": "acbdfd5cedfb6af1"
+    },
+    "./travel-server/src/services/agent/graph/stream-adapter.ts": {
+      "path": "./travel-server/src/services/agent/graph/stream-adapter.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 56,
+      "importCount": 0,
+      "exportCount": 2,
+      "hash": "756ca3861d90415d"
+    },
+    "./travel-server/src/services/agent/graph/tools/find-restaurants.ts": {
+      "path": "./travel-server/src/services/agent/graph/tools/find-restaurants.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 60,
+      "importCount": 3,
+      "exportCount": 1,
+      "hash": "82c4f12d26043283"
+    },
+    "./travel-server/src/services/agent/graph/tools/index.ts": {
+      "path": "./travel-server/src/services/agent/graph/tools/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 25,
+      "importCount": 3,
+      "exportCount": 1,
+      "hash": "b47363308b8c6946"
+    },
+    "./travel-server/src/services/agent/graph/tools/search-details.ts": {
+      "path": "./travel-server/src/services/agent/graph/tools/search-details.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 43,
+      "importCount": 3,
+      "exportCount": 1,
+      "hash": "54de95b829bfd895"
+    },
+    "./travel-server/src/services/agent/graph/tools/transport-info.ts": {
+      "path": "./travel-server/src/services/agent/graph/tools/transport-info.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 45,
+      "importCount": 3,
+      "exportCount": 1,
+      "hash": "e7d279c956dfe6b9"
+    },
+    "./travel-server/src/services/agent/schemas.ts": {
+      "path": "./travel-server/src/services/agent/schemas.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 105,
+      "importCount": 1,
+      "exportCount": 9,
+      "hash": "18706af43fd06e4a"
+    },
+    "./travel-server/src/services/agent/tools/calculator.ts": {
+      "path": "./travel-server/src/services/agent/tools/calculator.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 164,
+      "importCount": 2,
+      "exportCount": 2,
+      "hash": "6f2f47b332a762b0"
+    },
+    "./travel-server/src/services/agent/tools/search.ts": {
+      "path": "./travel-server/src/services/agent/tools/search.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 114,
+      "importCount": 0,
+      "exportCount": 3,
+      "hash": "29fa5ac5d9ff820b"
+    },
+    "./travel-server/src/services/agent/tools/weather.ts": {
+      "path": "./travel-server/src/services/agent/tools/weather.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 145,
+      "importCount": 1,
+      "exportCount": 2,
+      "hash": "7852ccb9d1da4905"
+    },
+    "./travel-server/src/services/agent/types.ts": {
+      "path": "./travel-server/src/services/agent/types.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 47,
+      "importCount": 0,
+      "exportCount": 6,
+      "hash": "36221390dbc6c01f"
+    },
+    "./travel-server/src/services/agent/utils/llm.ts": {
+      "path": "./travel-server/src/services/agent/utils/llm.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 92,
+      "importCount": 1,
+      "exportCount": 3,
+      "hash": "68dd6391bdb35848"
+    },
+    "./travel-server/src/services/chatService.ts": {
+      "path": "./travel-server/src/services/chatService.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 44,
+      "importCount": 2,
+      "exportCount": 2,
+      "hash": "94ae7113613ad2e0"
+    },
+    "./travel-server/src/services/db.ts": {
+      "path": "./travel-server/src/services/db.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 33,
+      "importCount": 2,
+      "exportCount": 1,
+      "hash": "55af75857bab73b9"
+    },
+    "./travel-server/src/services/travelService.ts": {
+      "path": "./travel-server/src/services/travelService.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 164,
+      "importCount": 6,
+      "exportCount": 0,
+      "hash": "a7beeae63888a1b6"
+    },
+    "./travel-server/src/services/tripService.ts": {
+      "path": "./travel-server/src/services/tripService.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 111,
+      "importCount": 3,
+      "exportCount": 6,
+      "hash": "c87645b29d5f48ba"
+    },
+    "./travel-server/src/services/userService.ts": {
+      "path": "./travel-server/src/services/userService.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 85,
+      "importCount": 2,
+      "exportCount": 7,
+      "hash": "24bceb64ad64555f"
+    },
+    "./travel-server/src/utils/streamUtils.ts": {
+      "path": "./travel-server/src/utils/streamUtils.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "lines": 45,
+      "importCount": 1,
+      "exportCount": 1,
+      "hash": "32202a4f87219ba5"
+    },
+    "./travel-server/tsconfig.json": {
+      "path": "./travel-server/tsconfig.json",
+      "language": "json",
+      "fileCategory": "config",
+      "lines": 23,
+      "importCount": 0,
+      "exportCount": 0,
+      "hash": "47495cbb872480a3"
+    },
+    "./面试学习指南.md": {
+      "path": "./面试学习指南.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "lines": 1165,
+      "importCount": 0,
+      "exportCount": 0,
+      "hash": "76065615c0434ed9"
+    }
+  }
+}
